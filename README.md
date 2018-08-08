@@ -117,6 +117,8 @@ La dénomination des vues doit intégrer l'aspect "emprise géographique" concer
 
 ATTENTION : Les vues peuvent être commentées, mais l'action de relancer le code CREATE OR REPLACE VIEW sans intégrer la commande COMMENT ON VIEW supprimera le commentaire déjà intégré.
 
+
+
  * **Autres objets** :
  
  Le tableau ci-dessous indique les principes de dénomination des autres objets. 
@@ -127,7 +129,8 @@ ATTENTION : Les vues peuvent être commentées, mais l'action de relancer le cod
 |séquence||[nom_table]_[champ séquence]|_seq|`geo_a_zone_urba_gid_seq`|
 |clé primaire||[nom_table]|_pkey|`geo_p_zone_urba_pkey`|
 |clé étrangère||[nom_table]_[champ clé(si nécessaire)]|_fkey|`lt_destdomi_fkey`|
-|trigger|t_t(+n° d'ordre d'éxécution)|[nom_trigger]||`t_t1_l_surf_cal`|
-|function trigger (générique)||[nom]||`m_l_surf_cal_ha()`|
-|function trigger (spécifique à une table ou vue cas 1)||[nom table]|_[type d'éxécution]|`an_doc_urba_null()`|
-|function trigger (spécifique à une table ou vue cas 2)|[type d'éxécutio]n_|[nom table]||`m_geom1_information_surf()`|
+|trigger|t_t(+n° d'ordre d'éxécution)_(r pour trigger générique et m pour trigger spécifiques)|[nom_trigger]||`t_t1_r_l_surf_cal`|
+|function trigger (générique)|r_|[nom]||`r_l_surf_cal_ha()`|
+|function trigger (spécifique à une table ou vue cas 1)|m_|[nom table]|_[type d'éxécution]|`m_an_doc_urba_null()`|
+|function trigger (spécifique à une table ou vue cas 2)|m_|[type d'éxécution]_|[nom table]|`m_geom1_information_surf()`|
+
