@@ -117,7 +117,9 @@ La dénomination des vues doit intégrer l'aspect "emprise géographique" concer
 
 ATTENTION : Les vues peuvent être commentées, mais l'action de relancer le code CREATE OR REPLACE VIEW sans intégrer la commande COMMENT ON VIEW supprimera le commentaire déjà intégré.
 
-
+ * **Les attributs génériques** :
+ 
+  * **Les listes de valeurs** :
 
  * **Autres objets** :
  
@@ -132,5 +134,5 @@ ATTENTION : Les vues peuvent être commentées, mais l'action de relancer le cod
 |trigger|t_t(+n° d'ordre d'éxécution)_(r pour trigger générique et m pour trigger spécifiques)|[nom_trigger]||`t_t1_r_l_surf_cal`|
 |function trigger (générique)|r_|[nom]||`r_l_surf_cal_ha()`|
 |function trigger (spécifique à une table ou vue cas 1)|m_|[nom table]|_[type d'éxécution]|`m_an_doc_urba_null()`|
-|function trigger (spécifique à une table ou vue cas 2)|m_|[type d'éxécution]|_[nom table]|`m_geom1_information_surf()`|
+|function trigger (spécifique à une table ou vue cas 2)|m_[attribut]|[type d'éxécution]|_[nom table]|`m_geom1_information_surf()`|
 
