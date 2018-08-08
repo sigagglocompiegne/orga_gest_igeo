@@ -33,7 +33,7 @@ L'ensemble des libellés (schéma, table, champ, vue, ...) doit être écrit en 
   * **Généralité** :
   
 Un schéma doit contenir uniquement de la donnée brute qui peut être modifiée soit manuellement ou avec l'aide de déclencheur (ou trigger) mis en place pour automatiser certaines tâches.
-Seules les vues pour la gestion ou de filtrage simplifié de la donnée peuvent être contenues dans les schémas de gestion. Les autres vues ayant des usages décisionnels ou d'analyses sont stockées dans le schémas d'exploitation.
+Seules les vues pour la gestion ou de filtrage simplifié de la donnée peuvent être contenues dans les schémas de gestion. Les autres vues ayant des usages décisionnels, d'analyses ou d'OpenData sont stockées dans le schémas d'exploitation.
 
 * **Tableaux de nomage** :
 
@@ -49,4 +49,15 @@ Seules les vues pour la gestion ou de filtrage simplifié de la donnée peuvent 
 |||x_apps_public|schéma contenant des tables ou vues pré-traitées et utilisées dans les applicatifs Grands Publics|
 |||x_opendata|schéma contenant des tables ou vues pré-traitées et utilisées pour les exports OpenData|
 |||x_projet|schéma contenant des tables ou vues pré-traitées pour répondre à une demande dans le cadre d'un projet|
+
+* **Les tables** :
+
+  * **Généralité** :
+  
+La dénomination des tables doit être cohérente entre tous les schémas afin d'assurer une meilleure visibilité des données.
+Néanmoins, on peut considérer 2 cas :
+- les données de référence : elles sont issues de producteurs extérieurs (comme l'IGN, l'Insee, ...) et dans ces cas particuliers, le nom des tables est conservé afin d'assurer un meilleur suivi,
+- les données "dites" métiers sont gérées (pour la plupart) en interne (mais peuvent être d'origine extérieur) et ne sont donc pas soumises à des contraintes de modèle externe. Dans le cas de l'existence d'un format d'échange standard de données, le nom des tables est alors généré à l'export des données.
+
+* **Tableaux de nomage** :
 
