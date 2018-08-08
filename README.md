@@ -131,7 +131,7 @@ Seuls certains champs doivent respectés une règle de nommage et doivent être 
 |observ|character varying(254)|Commentaires divers|
 |src_geom|character varying(2)|Code du référentiel géographique utilisé pour la saisie (référence à la table de valeur lt_src_geom|
 
-  * **Les listes de valeurs** :
+(à compléter)
 
  * **Autres objets** :
  
