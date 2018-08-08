@@ -31,7 +31,7 @@ L'ensemble des libellés (schéma, table, champ, vue, ...) doit être écrit en 
 
 * **Les schémas** :
 
-  * **Généralité** :
+  * *Généralité* :
   
 Un schéma doit contenir uniquement de la donnée brute qui peut être modifiée soit manuellement ou avec l'aide de déclencheur (ou trigger) mis en place pour automatiser certaines tâches.
 Seules les vues pour la gestion ou de filtrage simplifié de la donnée peuvent être contenues dans les schémas de gestion. Les autres vues ayant des usages décisionnels, d'analyses ou d'OpenData sont stockées dans le schémas d'exploitation.
