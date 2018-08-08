@@ -62,17 +62,14 @@ Néanmoins, on peut considérer 2 cas :
 
 . les données "dites" métiers sont gérées (pour la plupart) en interne (mais peuvent être d'origine extérieur) et ne sont donc pas soumises à des contraintes de modèle externe. Dans le cas de l'existence d'un format d'échange standard de données, le nom des tables est alors généré à l'export des données.
 
-  * **Tableaux de nomage** :
+  * **Les tables** :
  
-Particularité : les tables ou vues d'exploitations présentes dans les schémas x_apps, x_apps_public et x_opendata sont préfixés du nom du schéma sans les _ ce qui donne pour leur chemin d'accès :
+- contenant de la géométrie, préfixe **geo_**
+- contenant uniquement de la donnée attributaire, préfixe **an_**
+- servant de liens ou de correspondance, préfixe **lk_**
+- contenant une liste de valeur (avec une clé étrangère dans la plupart des cas), préfixe **lt_**
+- contenant des logs ou informations de suivi, préfixe **log_**
+- pour un traitement applicatif grand public, préfixe **xappspublic_** suivi de la dénomination classique des tables
+- pour un traitement applicatif pro, préfixe **xapps_** suivi de la dénomination classique des tables
+- piur l'OpenData, préfixe **xopendata_** suivi de la dénomination classique des tables
 
-. `x_apps.xapps_[nom table]`, `x_apps_public.xappspublic_[nom table]` ou `x_opendata.xopendata_[nom table]`
- 
-Pour les autres schémas, le tableau ci-dessous donne les règles à appliquer :
-
-|Type d'objets|préfixe|suffixe|exemple|Particularité|
-|:-:|:-:|:-:|:-:|:-:|
-|table avec un attribut de géométrie|geo_||geo_p_zone_urba|| 
-|vue avec un attribut de géométrie|geo_v_||geo_v_docurba|| 
-|vue matérialisée avec un attribut de géométrie|geo_vmr_||xapps_geo_vmr_adresse|Ces vues sont généralement des vues d'exploitation donc stockées dans les schémas préfixés x_ et elle-même préfixées par le nom du schéma (cf ci-dessus)|
-|vue matérialisée avec un attribut de géométrie et transformée en table|geo_vm_||geo_vm_adresse|Ces vues ont été transformées en table pour des raisoins de performance uniquement et doivent être régénérées avec le même code SQL que la vue.|
