@@ -121,6 +121,10 @@ ATTENTION : Les vues peuvent être commentées, mais l'action de relancer le cod
  
  Le tableau ci-dessous indique les principes de dénomination des autres objets. 
 
-|Objets|Libellé|suffixe|exemple|
-|:-:|:-:|:-:|:-:|
-|index|[nom_table]_[champ indexé]|_idx|`geo_p_zone_urba_geom_idx`|
+|Objets|Préfixe|Libellé|suffixe|exemple|
+|:-:|:-:|:-:|:-:|:-:|
+|index||[nom_table]_[champ indexé]|_idx|`geo_p_zone_urba_geom_idx`|
+|séquence||[nom_table]_[champ séquence]|_seq|`geo_a_zone_urba_gid_seq`|
+|clé primaire||[nom_table]|_pkey|`geo_p_zone_urba_pkey`|
+|clé étrangère||[nom_table]_[champ clé(si nécessaire)]|_fkey|`lt_destdomi_fkey`|
+|trigger|t_t(n° d'ordre d'éxécution)|[nom_trigger]||`t_t1_l_surf_cal`|
