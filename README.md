@@ -27,3 +27,10 @@ Des particularités ont été intégrés concernant les privilèges sur certains
 ## Règles de dénomination des objets de la base de données
 
 L'ensemble des libellés (schéma, table, champ, vue, ...) doit être écrit en minuscule ce qui permet d'éviter l’utilisation des "" dans les requêtes sql).
+
+* **Les schémas** :
+
+4 types de préfixes de dénomination de schémas sont présents dans la base de données :
+|Préfixe|Nom du schéma|Définition|
+|:-:|:-:|:-:|
+|m_|nom de la thématique|contient des données métiers gérés par l'Agglomération ou utilisées pour les besoins d'un service|
