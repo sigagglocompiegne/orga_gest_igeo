@@ -119,7 +119,7 @@ ATTENTION : Les vues peuvent être commentées, mais l'action de relancer le cod
 
  * **Les attributs génériques** :
  
- La dénomination des attributs reste libre mais doit-être explicites et faire l'objet d'un commentaire.
+ La dénomination des attributs reste libre mais doit-être explicite et faire l'objet d'un commentaire.
  
 Seuls certains champs doivent respectés une règle de nommage et doivent être présents dans l'ensemble des tables des données gérées par l'Agglomération lorsque cela est nécessaire :
 
