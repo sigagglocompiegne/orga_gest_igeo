@@ -129,5 +129,5 @@ ATTENTION : Les vues peuvent être commentées, mais l'action de relancer le cod
 |clé étrangère||[nom_table]_[champ clé(si nécessaire)]|_fkey|`lt_destdomi_fkey`|
 |trigger|t_t(+n° d'ordre d'éxécution)|[nom_trigger]||`t_t1_l_surf_cal`|
 |function trigger (générique)||[nom]||`m_l_surf_cal_ha()`|
-|function trigger (spécifique à une table ou vue cas 1)||[nom] table]|_[type d'éxécution]|`an_doc_urba_null()`|
-|function trigger (spécifique à une table ou vue cas 2)|[type d'éxécution_|[nom] table]||`m_geom1_information_surf()`|
+|function trigger (spécifique à une table ou vue cas 1)||[nom table]|_[type d'éxécution]|`an_doc_urba_null()`|
+|function trigger (spécifique à une table ou vue cas 2)|[type d'éxécutio]n_|[nom table]||`m_geom1_information_surf()`|
