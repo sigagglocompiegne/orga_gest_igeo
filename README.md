@@ -121,6 +121,6 @@ ATTENTION : Les vues peuvent être commentées, mais l'action de relancer le cod
  
  Le tableau ci-dessous indique les principes de dénomination des autres objets. 
 
-|Objets|libellé|suffixe|exemple|
+|Objets|Libellé|suffixe|exemple|
 |:-:|:-:|:-:|:-:|
-|index|[nom_table]|[champ indexé]|_idx|`geo_p_zone_urba_geom_idx`|
+|index|[nom_table]_[champ indexé]|_idx|`geo_p_zone_urba_geom_idx`|
