@@ -34,4 +34,5 @@ L'ensemble des libellés (schéma, table, champ, vue, ...) doit être écrit en 
 
 |Préfixe|Nom du schéma|Exemple|Définition|
 |:-:|:-:|:-:|:-:|
-|m_|nom de la thématique|m_habitat|contient des données métiers gérés par l'Agglomération ou utilisées pour les besoins d'un service|
+|m_|nom de la thématique|m_urbanisme_doc,m_habitat, ...|contient des données métiers gérés par l'Agglomération ou utilisées pour les besoins d'un service|
+|r_|nom du référentiel|r_bdtopo,r_pcrs, r_objet,...|contient des données issues de référentiel ou étant concédéré comme des référenties gérées par l'Agglomération ou provenant de producteurs tiers |
