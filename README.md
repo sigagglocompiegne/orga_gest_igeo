@@ -66,16 +66,16 @@ Néanmoins, on peut considérer 2 cas :
 
 Le tableau ci-dessous indique les principes de dénomination des tables. 
 
-|Contenus|Pré-préfixe|Préfixe|exemple|
-|:-:|:-:|:-:|:-:|
-|données attributaires et géométriques||**geo_**|`geo_p_zone_urba`|
-|uniquement de la donnée attributaire ||**an_**|`an_doc_urba`|
-|uniquement de la donnée attributaire servant de liens ou de correspondance||**lk_**|`lk_voirie_rurbain`|
-|liste de valeur||**lt_**|`lt_typedoc`|
-|log ou information de suivi||**log_**|`log_suivi_audit`|
-|traitement applicatif grand public|**xappspublic_**|préfixe correspondant|`xappspublic_an_dec_pav_adr_proxi`|
-|traitement applicatif pro|**xapps_**|préfixe correspondant|`xapps_an_fisc_geo_taxe_amgt`|
-|export OpenData|**xopendata_**|préfixe correspondant||
+|Contenus|Pré-préfixe|Préfixe|exemple|Particularité|
+|:-:|:-:|:-:|:-:|:-:|
+|données attributaires et géométriques||**geo_**|`geo_p_zone_urba`||
+|uniquement de la donnée attributaire ||**an_**|`an_doc_urba`||
+|uniquement de la donnée attributaire servant de liens ou de correspondance||**lk_**|`lk_voirie_rurbain`||
+|liste de valeur||**lt_**|`lt_typedoc`|(intégrer la façon d'organiser les valeurs)|
+|log ou information de suivi||**log_**|`log_suivi_audit`||
+|traitement applicatif grand public|**xappspublic_**|préfixe correspondant|`xappspublic_an_dec_pav_adr_proxi`||
+|traitement applicatif pro|**xapps_**|préfixe correspondant|`xapps_an_fisc_geo_taxe_amgt`||
+|export OpenData|**xopendata_**|préfixe correspondant|||
 
 **Rappel :**
 
@@ -137,14 +137,14 @@ Seuls certains champs doivent respectés une règle de nommage et doivent être 
  
  Le tableau ci-dessous indique les principes de dénomination des autres objets. 
 
-|Objets|Préfixe|Libellé|suffixe|exemple|
-|:-:|:-:|:-:|:-:|:-:|
-|index||[nom_table]_[champ indexé]|_idx|`geo_p_zone_urba_geom_idx`|
-|séquence||[nom_table]_[champ séquence]|_seq|`geo_a_zone_urba_gid_seq`|
-|clé primaire||[nom_table]|_pkey|`geo_p_zone_urba_pkey`|
-|clé étrangère||[nom_table]_[champ clé(si nécessaire)]|_fkey|`lt_destdomi_fkey`|
-|trigger|t_t(+n° d'ordre d'éxécution)_(r pour trigger générique et m pour trigger spécifiques)|[nom_trigger]||`t_t1_r_l_surf_cal`|
-|function trigger (générique)|r_|[nom]||`r_l_surf_cal_ha()`|
-|function trigger (spécifique à une table ou vue cas 1)|m_|[nom table]|_[type d'éxécution]|`m_an_doc_urba_null()`|
-|function trigger (spécifique à une table ou vue cas 2)|m_[attribut]|[type d'éxécution]|_[nom table]|`m_geom1_information_surf()`|
+|Objets|Préfixe|Libellé|suffixe|exemple|Particularité|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|index||[nom_table]_[champ indexé]|_idx|`geo_p_zone_urba_geom_idx`||
+|séquence||[nom_table]_[champ séquence]|_seq|`geo_a_zone_urba_gid_seq`||
+|clé primaire||[nom_table]|_pkey|`geo_p_zone_urba_pkey`||
+|clé étrangère||[nom_table]_[champ clé(si nécessaire)]|_fkey|`lt_destdomi_fkey`||
+|trigger|t_t(+n° d'ordre d'éxécution)_(r pour trigger générique et m pour trigger spécifiques)||[nom_trigger]||`t_t1_r_l_surf_cal`||
+|function trigger (générique)|r_|[nom]||`r_l_surf_cal_ha()`|ils sont placés dans le schéma `public`|
+|function trigger (spécifique à une table ou vue cas 1)|m_|[nom table]|_[type d'éxécution]|`m_an_doc_urba_null()`|ils sont placés dans le schéma principal d'activation|
+|function trigger (spécifique à une table ou vue cas 2)|m_[attribut]|[type d'éxécution]|_[nomtable]|`m_geom1_information_surf()`|ils sont placés dans le schéma principal d'activation|
 
