@@ -63,13 +63,21 @@ Néanmoins, on peut considérer 2 cas :
 . les données "dites" métiers sont gérées (pour la plupart) en interne (mais peuvent être d'origine extérieur) et ne sont donc pas soumises à des contraintes de modèle externe. Dans le cas de l'existence d'un format d'échange standard de données, le nom des tables est alors généré à l'export des données.
 
   * **Les tables** :
- 
-- contenant de la géométrie, préfixe **geo_**
-- contenant uniquement de la donnée attributaire, préfixe **an_**
-- servant de liens ou de correspondance, préfixe **lk_**
-- contenant une liste de valeur (avec une clé étrangère dans la plupart des cas), préfixe **lt_**
-- contenant des logs ou informations de suivi, préfixe **log_**
-- pour un traitement applicatif grand public, préfixe **xappspublic_** suivi de la dénomination classique des tables
-- pour un traitement applicatif pro, préfixe **xapps_** suivi de la dénomination classique des tables
-- piur l'OpenData, préfixe **xopendata_** suivi de la dénomination classique des tables
 
+|Contenus|Préfixe|
+|:-:|:-:|
+|données attributaires et géométriques|**geo_**|
+|uniquement de la donnée attributaire |**an_**|
+|uniquement de la donnée attributaire servant de liens ou de correspondance|**lk_**|
+|liste de valeur|**lt_**|
+|log ou information de suivi|**log_**|
+|traitement applicatif grand public|**xappspublic_**|
+|traitement applicatif pro|**xapps_**|
+|export OpenData|**xopendata_**|
+
+ 
+Ces préfixes sont suivis de la dénomination classique des tables.
+
+Cette dénomination peut-être liée à un modèle de données issus d'une norme (cas pour les données des pos-plu) ou laissé à la liberté de l'administrateur en respectant une syntaxe de bases :
+
+**ex :** `geo_[theme]_[identification]`. Si on considère la création d'une table localisant les locaux d'activité, on pourrait la dénommer ainsi geo_eco_locaux.
