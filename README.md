@@ -45,10 +45,10 @@ Seules les vues pour la gestion ou de filtrage simplifié de la donnée peuvent 
 |r_|nom du référentiel|gestion|r_bdtopo, r_pcrs, r_objet,...|contient des données issues de référentiel ou étant concédéré comme des référenties gérées par l'Agglomération ou provenant de producteurs tiers |
 |s_|nom de la base de données|gestion|s_sirene, s_rpls, ...|contient des données attributaires de référence provenant de producteurs tiers|
 |x_|nom de l'usage|exploitation||contient des données pré-traitées pour les applications WebSIG métiers, Grands Publics, pour des exports OpenData ou des traitements particuliers liés à des projets|
-|||x_apps|schéma contenant des tables ou vues pré-traitées et utilisées dans les applicatifs WebSIG métiers|
-|||x_apps_public|schéma contenant des tables ou vues pré-traitées et utilisées dans les applicatifs Grands Publics|
-|||x_opendata|schéma contenant des tables ou vues pré-traitées et utilisées pour les exports OpenData|
-|||x_projet|schéma contenant des tables ou vues pré-traitées pour répondre à une demande dans le cadre d'un projet|
+||||x_apps|schéma contenant des tables ou vues pré-traitées et utilisées dans les applicatifs WebSIG métiers|
+||||x_apps_public|schéma contenant des tables ou vues pré-traitées et utilisées dans les applicatifs Grands Publics|
+||||x_opendata|schéma contenant des tables ou vues pré-traitées et utilisées pour les exports OpenData|
+||||x_projet|schéma contenant des tables ou vues pré-traitées pour répondre à une demande dans le cadre d'un projet|
 
 * **Les tables** :
 
