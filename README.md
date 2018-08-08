@@ -143,7 +143,7 @@ Seuls certains champs doivent respectés une règle de nommage et doivent être 
 |séquence||[nom_table]_[champ séquence]|_seq|`geo_a_zone_urba_gid_seq`||
 |clé primaire||[nom_table]|_pkey|`geo_p_zone_urba_pkey`||
 |clé étrangère||[nom_table]_[champ clé(si nécessaire)]|_fkey|`lt_destdomi_fkey`||
-|trigger|t_t(+n° d'ordre d'éxécution)_(r pour trigger générique et m pour trigger spécifiques)||[nom_trigger]||`t_t1_r_l_surf_cal`||
+|trigger|t_t(+n° d'ordre d'éxécution)_(r pour trigger générique et m pour trigger spécifiques)|[nom_trigger]|||`t_t1_r_l_surf_cal`||
 |function trigger (générique)|r_|[nom]||`r_l_surf_cal_ha()`|ils sont placés dans le schéma `public`|
 |function trigger (spécifique à une table ou vue cas 1)|m_|[nom table]|_[type d'éxécution]|`m_an_doc_urba_null()`|ils sont placés dans le schéma principal d'activation|
 |function trigger (spécifique à une table ou vue cas 2)|m_[attribut]|[type d'éxécution]|_[nomtable]|`m_geom1_information_surf()`|ils sont placés dans le schéma principal d'activation|
