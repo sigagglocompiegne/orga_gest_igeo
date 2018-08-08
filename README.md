@@ -65,6 +65,7 @@ Néanmoins, on peut considérer 2 cas :
   * **Tableaux de nomage** :
  
 Particularité : les tables ou vues d'exploitations présentes dans les schémas x_apps, x_apps_public et x_opendata sont préfixés du nom du schéma sans les _ ce qui donne pour leur chemin d'accès :
+
 . x_apps.xapps_[nom table],
 . x_apps_public.xappspublic_[nom table],
 . x_opendata.xopendate_[nom table].
