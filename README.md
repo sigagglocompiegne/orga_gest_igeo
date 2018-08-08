@@ -85,4 +85,9 @@ Cette dénomination peut-être liée à un modèle de données issus d'une norme
 
 Les tables doivent être commentées afin d'assurer la compréhension de la donnée (au minimum définir en quelques mots le contenu de la table, la source, l'échelle d'emprise, éventuellement une date de validité, de mise à jour, ...).
 
-  * **Les vues** :
+ * **Les vues** :
+ 
+ 
+QGIS imposant une contrainte aux vues pour être affichée, à savoir qu'il est nécessaire qu'un identifiant soit présent et de type entier (integer / serial), il faut penser à ajouter un compteur arbitraire au début de la requête SELECT (ROW_NUMBER() OVER())::integer AS gid.
+
+Il est préférable de forcer le type de géométrie dans la vue pour être correctement intégrée dans geometry_column avec ce paramètre collé à l'attribut de géométrie (geom) `::geometry(polygon,2154)` par ex.
