@@ -51,11 +51,11 @@ Seules les vues pour la gestion ou de filtrage simplifié de la donnée peuvent 
 ||||x_opendata|schéma contenant des tables ou vues pré-traitées et utilisées pour les exports OpenData|
 ||||x_projet|schéma contenant des tables ou vues pré-traitées pour répondre à une demande dans le cadre d'un projet|
 
-### Les tables
+### Les objets d'un schéma
 
   * **Généralité** :
   
-La dénomination des tables doit être cohérente entre tous les schémas afin d'assurer une meilleure visibilité des données.
+La dénomination des tables, vues, trigger, function, séquence, index, clé primaire et étrangère ... doit être cohérente entre tous les schémas afin d'assurer une meilleure visibilité des données.
 Néanmoins, on peut considérer 2 cas :
 
 . les données de référence : elles sont issues de producteurs extérieurs (comme l'IGN, l'Insee, ...) et dans ces cas particuliers, le nom des tables est conservé afin d'assurer un meilleur suivi,
@@ -63,4 +63,12 @@ Néanmoins, on peut considérer 2 cas :
 . les données "dites" métiers sont gérées (pour la plupart) en interne (mais peuvent être d'origine extérieur) et ne sont donc pas soumises à des contraintes de modèle externe. Dans le cas de l'existence d'un format d'échange standard de données, le nom des tables est alors généré à l'export des données.
 
   * **Tableaux de nomage** :
-
+ 
+Particularité : les tables ou vues d'exploitations présentes dans les schémas x_apps, x_apps_public et x_opendata sont préfixés du nom du schéma sans les _ ce qui donne pour leur chemin d'accès :
+. x_apps.xapps_[nom table],
+. x_apps_public.xappspublic_[nom table],
+. x_opendata.xopendate_[nom table].
+ 
+ |Type d'objets|préfixe|suffixe|exemple|définition|
+ |:-:|:-:|:-:|:-:|:-:|
+ |table|geo_||geo_|| 
