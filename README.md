@@ -110,3 +110,6 @@ Le tableau ci-dessous indique les principes de dénomination des vues qui décou
 **Rappel :**
 
 Ces préfixes sont suivis de la dénomination classique des tables.
+Par défaut, les tables de liens ou de listes de valeur ne peuvent pas faire l'objet d'une vue.
+La dénomination des vues doit intégrer l'aspect "emprise géographique" concernée par cette vue. Ex : `geo_v_zone_urba_compiegne` => vue géographique des zonages PLU sur la commune de Compiègne
+ATTENTION : Les vues peuvent être commentées, mais l'action de relancer le code CREATE OR REPLACE VIEW sans intégrer la commande COMMENT ON VIEW supprimera le commentaire déjà intégré.
