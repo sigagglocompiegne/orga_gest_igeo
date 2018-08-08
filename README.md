@@ -119,6 +119,18 @@ ATTENTION : Les vues peuvent être commentées, mais l'action de relancer le cod
 
  * **Les attributs génériques** :
  
+ La dénomination des attributs reste libre mais doit-être explicites et faire l'objet d'un commentaire.
+ 
+Seuls certains champs doivent respectés une règle de nommage et doivent être présents dans l'ensemble des tables des données gérées par l'Agglomération lorsque cela est nécessaire :
+
+|attribut|type|définition|
+|:-:|:-:|:-:|
+|insee|character varying(5)|code insee de la commune|
+|commune|character varying(150)|libellé de la commune|
+|op_sai|character varying(80)|Opérateur de la saisie de la donnée|
+|observ|character varying(254)|Commentaires divers|
+|src_geom|character varying(2)|Code du référentiel géographique utilisé pour la saisie (référence à la table de valeur lt_src_geom|
+
   * **Les listes de valeurs** :
 
  * **Autres objets** :
