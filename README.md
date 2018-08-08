@@ -3,6 +3,7 @@
 # Principe organisationnel de la base de données igeo_compiegnois de l'Agglomération de la Région de Compiègne
 
 ## Les rôles de connexion et privilèges des groupes
+  
   * **Généralité** :
   
 L'ensemble des paramètres de connexion sont disponibles sur le wiki dédié "Serveur de base de données" sur le serveur RedMine.
@@ -35,7 +36,7 @@ L'ensemble des libellés (schéma, table, champ, vue, ...) doit être écrit en 
 Un schéma doit contenir uniquement de la donnée brute qui peut être modifiée soit manuellement ou avec l'aide de déclencheur (ou trigger) mis en place pour automatiser certaines tâches.
 Seules les vues pour la gestion ou de filtrage simplifié de la donnée peuvent être contenues dans les schémas de gestion. Les autres vues ayant des usages décisionnels, d'analyses ou d'OpenData sont stockées dans le schémas d'exploitation.
 
-* **Tableaux de nomage** :
+  * **Tableaux de nomage** :
 
 4 types de préfixes de dénomination de schémas sont présents dans la base de données :
 
@@ -59,5 +60,5 @@ Néanmoins, on peut considérer 2 cas :
 - les données de référence : elles sont issues de producteurs extérieurs (comme l'IGN, l'Insee, ...) et dans ces cas particuliers, le nom des tables est conservé afin d'assurer un meilleur suivi,
 - les données "dites" métiers sont gérées (pour la plupart) en interne (mais peuvent être d'origine extérieur) et ne sont donc pas soumises à des contraintes de modèle externe. Dans le cas de l'existence d'un format d'échange standard de données, le nom des tables est alors généré à l'export des données.
 
-* **Tableaux de nomage** :
+  * **Tableaux de nomage** :
 
