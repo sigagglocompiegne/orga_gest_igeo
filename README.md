@@ -64,16 +64,18 @@ Néanmoins, on peut considérer 2 cas :
 
   * **Les tables** :
 
-|Contenus|Préfixe|
+Le tableau ci-dessous indique les principes de dénomination des tables. 
+
+|Contenus|Pré-préfixe|Préfixe|
 |:-:|:-:|
-|données attributaires et géométriques|**geo_**|
-|uniquement de la donnée attributaire |**an_**|
-|uniquement de la donnée attributaire servant de liens ou de correspondance|**lk_**|
-|liste de valeur|**lt_**|
-|log ou information de suivi|**log_**|
-|traitement applicatif grand public|**xappspublic_**|
-|traitement applicatif pro|**xapps_**|
-|export OpenData|**xopendata_**|
+|données attributaires et géométriques||**geo_**|
+|uniquement de la donnée attributaire ||**an_**|
+|uniquement de la donnée attributaire servant de liens ou de correspondance||**lk_**|
+|liste de valeur||**lt_**|
+|log ou information de suivi||**log_**|
+|traitement applicatif grand public|**xappspublic_**|préfixe correspondant|
+|traitement applicatif pro|**xapps_**|préfixe correspondant|
+|export OpenData|**xopendata_**|préfixe correspondant|
 
 **Rappel :**
 
@@ -87,7 +89,24 @@ Les tables doivent être commentées afin d'assurer la compréhension de la donn
 
  * **Les vues** :
  
- 
-QGIS imposant une contrainte aux vues pour être affichée, à savoir qu'il est nécessaire qu'un identifiant soit présent et de type entier (integer / serial), il faut penser à ajouter un compteur arbitraire au début de la requête SELECT (ROW_NUMBER() OVER())::integer AS gid.
+ QGIS imposant une contrainte aux vues pour être affichée, à savoir qu'un identifiant doit être présent et de type entier (integer / serial), il faut penser à ajouter si nécessaire un compteur arbitraire au début de la requête SELECT (ROW_NUMBER() OVER())::integer AS gid.
 
 Il est préférable de forcer le type de géométrie dans la vue pour être correctement intégrée dans geometry_column avec ce paramètre collé à l'attribut de géométrie (geom) `::geometry(polygon,2154)` par ex.
+
+Le tableau ci-dessous indique les principes de dénomination des vues qui découlent de celui des tables. 
+
+|Contenus|Pré-préfixe|Préfixe|
+|:-:|:-:|
+|données attributaires et géométriques||**geo_v_**|
+|uniquement de la donnée attributaire ||**an_v_**|
+|vue matérilaisée de données attributaires et géométriques||**geo_vmr_**|
+|vue matérilaisée en table de données attributaires et géométriques||**geo_vm_**|
+|vue matérilaisée de données attributaires||**an_vmr_**|
+|vue matérilaisée en table de données attributaires||**an_vm_**|
+|traitement applicatif grand public|**xappspublic_** |préfixe correspondant|
+|traitement applicatif pro|**xapps_** |préfixe correspondant|
+|export OpenData|**xopendata_** |préfixe correspondant|
+
+**Rappel :**
+
+Ces préfixes sont suivis de la dénomination classique des tables.
