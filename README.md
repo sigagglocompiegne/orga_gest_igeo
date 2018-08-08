@@ -19,3 +19,4 @@ Des particularités ont été intégrés concernant les privilèges sur certains
 
 |Rôle de connexion|Superutilisateur|Propriétaire des objets|Appartient au groupe|Privilèges sur le structure|Privilèges sur les données|
 |-|-|-|-|-|-|
+|postgres|x|(par défaut)|-|all|all|
