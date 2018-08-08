@@ -95,17 +95,17 @@ Il est préférable de forcer le type de géométrie dans la vue pour être corr
 
 Le tableau ci-dessous indique les principes de dénomination des vues qui découlent de celui des tables. 
 
-|Contenus|Pré-préfixe|Préfixe|exemple|
-|:-:|:-:|:-:|:-:|
-|données attributaires et géométriques||**geo_v_**|`geo_v_docurba`|
-|uniquement de la donnée attributaire ||**an_v_**|`an_v_docurba_arcba`|
-|vue matérilaisée de données attributaires et géométriques||**geo_vmr_**|utilisée uniquement en complément du pré-préfixe pour les 3 derniers cas de ce tableau|
-|vue matérilaisée en table de données attributaires et géométriques||**geo_vm_**|utilisée uniquement en complément du pré-préfixe pour les 3 derniers cas de ce tableau|
-|vue matérilaisée de données attributaires||**an_vmr_**|utilisée uniquement en complément du pré-préfixe pour les 3 derniers cas de ce tableau|
-|vue matérilaisée en table de données attributaires||**an_vm_**|utilisée uniquement en complément du pré-préfixe pour les 3 derniers cas de ce tableau|
-|traitement applicatif grand public|**xappspublic_** |préfixe correspondant|`xappspublic_an_vmr_fichegeo_ruplu0_gdpublic`|
-|traitement applicatif pro|**xapps_** |préfixe correspondant|`xapps_an_v_troncon`|
-|export OpenData|**xopendata_** |préfixe correspondant|`xopendata_an_v_bal`|
+|cas|Contenus|Pré-préfixe|Préfixe|exemple|
+|:-:|:-:|:-:|:-:|:-:|
+|1|données attributaires et géométriques||**geo_v_**|`geo_v_docurba`|
+|2|uniquement de la donnée attributaire ||**an_v_**|`an_v_docurba_arcba`|
+|3|vue matérilaisée de données attributaires et géométriques||**geo_vmr_**|utilisée uniquement avec les cas 7,8 et 9|
+|4|vue matérilaisée en table de données attributaires et géométriques||**geo_vm_**|utilisée uniquement avec les cas 7,8 et 9|
+|5|vue matérilaisée de données attributaires||**an_vmr_**|utilisée uniquement avec les cas 7,8 et 9 |
+|6|vue matérilaisée en table de données attributaires||**an_vm_**|utilisée uniquement avec les cas 7,8 et 9|
+|7|traitement applicatif grand public|**xappspublic_** |préfixe correspondant|`xappspublic_an_vmr_fichegeo_ruplu0_gdpublic`|
+|8|traitement applicatif pro|**xapps_** |préfixe correspondant|`xapps_an_v_troncon`|
+|9|export OpenData|**xopendata_** |préfixe correspondant|`xopendata_an_v_bal`|
 
 **Rappel :**
 
