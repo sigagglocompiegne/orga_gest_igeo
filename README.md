@@ -59,6 +59,7 @@ La dénomination des tables doit être cohérente entre tous les schémas afin d
 Néanmoins, on peut considérer 2 cas :
 
 . les données de référence : elles sont issues de producteurs extérieurs (comme l'IGN, l'Insee, ...) et dans ces cas particuliers, le nom des tables est conservé afin d'assurer un meilleur suivi,
+
 . les données "dites" métiers sont gérées (pour la plupart) en interne (mais peuvent être d'origine extérieur) et ne sont donc pas soumises à des contraintes de modèle externe. Dans le cas de l'existence d'un format d'échange standard de données, le nom des tables est alors généré à l'export des données.
 
   * **Tableaux de nomage** :
