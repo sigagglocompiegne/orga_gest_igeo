@@ -21,3 +21,5 @@ Des particularités ont été intégrés concernant les privilèges sur certains
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |postgres|x|(par défaut)|-|all|all|
 |sig_create||x|create_sig|all|all|
+|sig_edit|||edit_sig|aucun|select,insert,update,delete|
+|sig_read|||read_sig|aucun|select|
