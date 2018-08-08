@@ -66,16 +66,16 @@ Néanmoins, on peut considérer 2 cas :
 
 Le tableau ci-dessous indique les principes de dénomination des tables. 
 
-|Contenus|Pré-préfixe|Préfixe|
-|:-:|:-:|
-|données attributaires et géométriques||**geo_**|
-|uniquement de la donnée attributaire ||**an_**|
-|uniquement de la donnée attributaire servant de liens ou de correspondance||**lk_**|
-|liste de valeur||**lt_**|
-|log ou information de suivi||**log_**|
-|traitement applicatif grand public|**xappspublic_**|préfixe correspondant|
-|traitement applicatif pro|**xapps_**|préfixe correspondant|
-|export OpenData|**xopendata_**|préfixe correspondant|
+|Contenus|Pré-préfixe|Préfixe|exemple|
+|:-:|:-:|:-:|:-:|
+|données attributaires et géométriques||**geo_**|`geo_p_zone_urba`|
+|uniquement de la donnée attributaire ||**an_**|`an_doc_urba`|
+|uniquement de la donnée attributaire servant de liens ou de correspondance||**lk_**|`lk_voirie_rurbain`|
+|liste de valeur||**lt_**|`lt_typedoc`|
+|log ou information de suivi||**log_**|`log_suivi_audit`|
+|traitement applicatif grand public|**xappspublic_**|préfixe correspondant|`xappspublic_an_dec_pav_adr_proxi`|
+|traitement applicatif pro|**xapps_**|préfixe correspondant|`xapps_an_fisc_geo_taxe_amgt`|
+|export OpenData|**xopendata_**|préfixe correspondant||
 
 **Rappel :**
 
@@ -89,23 +89,23 @@ Les tables doivent être commentées afin d'assurer la compréhension de la donn
 
  * **Les vues** :
  
- QGIS imposant une contrainte aux vues pour être affichée, à savoir qu'un identifiant doit être présent et de type entier (integer / serial), il faut penser à ajouter si nécessaire un compteur arbitraire au début de la requête SELECT (ROW_NUMBER() OVER())::integer AS gid.
+QGIS imposant une contrainte aux vues pour être affichée, à savoir qu'un identifiant doit être présent et de type entier (integer / serial), il faut penser à ajouter si nécessaire un compteur arbitraire au début de la requête SELECT (ROW_NUMBER() OVER())::integer AS gid.
 
 Il est préférable de forcer le type de géométrie dans la vue pour être correctement intégrée dans geometry_column avec ce paramètre collé à l'attribut de géométrie (geom) `::geometry(polygon,2154)` par ex.
 
 Le tableau ci-dessous indique les principes de dénomination des vues qui découlent de celui des tables. 
 
-|Contenus|Pré-préfixe|Préfixe|
-|:-:|:-:|
-|données attributaires et géométriques||**geo_v_**|
-|uniquement de la donnée attributaire ||**an_v_**|
-|vue matérilaisée de données attributaires et géométriques||**geo_vmr_**|
-|vue matérilaisée en table de données attributaires et géométriques||**geo_vm_**|
-|vue matérilaisée de données attributaires||**an_vmr_**|
-|vue matérilaisée en table de données attributaires||**an_vm_**|
-|traitement applicatif grand public|**xappspublic_** |préfixe correspondant|
-|traitement applicatif pro|**xapps_** |préfixe correspondant|
-|export OpenData|**xopendata_** |préfixe correspondant|
+|Contenus|Pré-préfixe|Préfixe|exemple|
+|:-:|:-:|:-:|:-:|
+|données attributaires et géométriques||**geo_v_**|`geo_v_docurba`|
+|uniquement de la donnée attributaire ||**an_v_**|`an_v_docurba_arcba`|
+|vue matérilaisée de données attributaires et géométriques||**geo_vmr_**||
+|vue matérilaisée en table de données attributaires et géométriques||**geo_vm_**||
+|vue matérilaisée de données attributaires||**an_vmr_**||
+|vue matérilaisée en table de données attributaires||**an_vm_**||
+|traitement applicatif grand public|**xappspublic_** |préfixe correspondant|`xappspublic_an_vmr_fichegeo_ruplu0_gdpublic`|
+|traitement applicatif pro|**xapps_** |préfixe correspondant|`xapps_an_v_troncon`|
+|export OpenData|**xopendata_** |préfixe correspondant|`xopendata_an_v_bal`|
 
 **Rappel :**
 
