@@ -23,3 +23,7 @@ Des particularités ont été intégrés concernant les privilèges sur certains
 |sig_create||x|create_sig|all|all|
 |sig_edit|||edit_sig|aucun|select,insert,update,delete|
 |sig_read|||read_sig|aucun|select|
+
+## Règles de dénomination des objets de la base de données
+
+L'ensemble des libellés (schéma, table, champ, vue, ...) doit être écrit en minuscule ce qui permet d'éviter l’utilisation des "" dans les requêtes sql).
