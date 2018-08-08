@@ -99,10 +99,10 @@ Le tableau ci-dessous indique les principes de dénomination des vues qui décou
 |:-:|:-:|:-:|:-:|
 |données attributaires et géométriques||**geo_v_**|`geo_v_docurba`|
 |uniquement de la donnée attributaire ||**an_v_**|`an_v_docurba_arcba`|
-|vue matérilaisée de données attributaires et géométriques||**geo_vmr_**|utilisée dans les schémas x_|
-|vue matérilaisée en table de données attributaires et géométriques||**geo_vm_**|utilisée dans les schémas x_|
-|vue matérilaisée de données attributaires||**an_vmr_**|utilisée dans les schémas x_|
-|vue matérilaisée en table de données attributaires||**an_vm_**|utilisée dans les schémas x_|
+|vue matérilaisée de données attributaires et géométriques||**geo_vmr_**|utilisée uniquement en complément du pré-préfixe pour les 3 derniers cas de ce tableau|
+|vue matérilaisée en table de données attributaires et géométriques||**geo_vm_**|utilisée uniquement en complément du pré-préfixe pour les 3 derniers cas de ce tableau|
+|vue matérilaisée de données attributaires||**an_vmr_**|utilisée uniquement en complément du pré-préfixe pour les 3 derniers cas de ce tableau|
+|vue matérilaisée en table de données attributaires||**an_vm_**|utilisée uniquement en complément du pré-préfixe pour les 3 derniers cas de ce tableau|
 |traitement applicatif grand public|**xappspublic_** |préfixe correspondant|`xappspublic_an_vmr_fichegeo_ruplu0_gdpublic`|
 |traitement applicatif pro|**xapps_** |préfixe correspondant|`xapps_an_v_troncon`|
 |export OpenData|**xopendata_** |préfixe correspondant|`xopendata_an_v_bal`|
