@@ -30,12 +30,23 @@ L'ensemble des libellés (schéma, table, champ, vue, ...) doit être écrit en 
 
 * **Les schémas** :
 
+  * **Généralité** :
+  
+Un schéma doit contenir uniquement de la donnée brute qui peut être modifiée soit manuellement ou avec l'aide de déclencheur (ou trigger) mis en place pour automatiser certaines tâches.
+Seules les vues pour la gestion ou de filtrage simplifié de la donnée peuvent être contenues dans les schémas de gestion. Les autres vues ayant des usages décisionnels ou d'analyses sont stockées dans le schémas d'exploitation.
+
+* **Tableaux de nomage** :
+
 4 types de préfixes de dénomination de schémas sont présents dans la base de données :
 
-|Préfixe|Nom du schéma|Exemple|Définition|
+|Préfixe|Nom du schéma|Type|Exemple|Définition|
 |:-:|:-:|:-:|:-:|
-|m_|nom de la thématique|m_urbanisme_doc, m_habitat, ...|contient des données métiers gérés par l'Agglomération ou utilisées pour les besoins d'un service|
-|r_|nom du référentiel|r_bdtopo, r_pcrs, r_objet,...|contient des données issues de référentiel ou étant concédéré comme des référenties gérées par l'Agglomération ou provenant de producteurs tiers |
-|s_|nom de la base de données|s_sirene, s_rpls, ...|contient des données attributaires de référence provenant de producteurs tiers|
-|x_|nom de l'usage||contient des données pré-traitées pour les applications WebSIG métiers, Grands Publics ou pour des exports OpenData|
+|m_|nom de la thématique|gestion|m_urbanisme_doc, m_habitat, ...|contient des données métiers gérés par l'Agglomération ou utilisées pour les besoins d'un service|
+|r_|nom du référentiel|gestion|r_bdtopo, r_pcrs, r_objet,...|contient des données issues de référentiel ou étant concédéré comme des référenties gérées par l'Agglomération ou provenant de producteurs tiers |
+|s_|nom de la base de données|gestion|s_sirene, s_rpls, ...|contient des données attributaires de référence provenant de producteurs tiers|
+|x_|nom de l'usage|exploitation||contient des données pré-traitées pour les applications WebSIG métiers, Grands Publics, pour des exports OpenData ou des traitements particuliers liés à des projets|
 |||x_apps|schéma contenant des tables ou vues pré-traitées et utilisées dans les applicatifs WebSIG métiers|
+|||x_apps_public|schéma contenant des tables ou vues pré-traitées et utilisées dans les applicatifs Grands Publics|
+|||x_opendata|schéma contenant des tables ou vues pré-traitées et utilisées pour les exports OpenData|
+|||x_projet|schéma contenant des tables ou vues pré-traitées pour répondre à une demande dans le cadre d'un projet|
+
