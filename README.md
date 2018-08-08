@@ -31,6 +31,7 @@ L'ensemble des libellés (schéma, table, champ, vue, ...) doit être écrit en 
 * **Les schémas** :
 
 4 types de préfixes de dénomination de schémas sont présents dans la base de données :
+
 |Préfixe|Nom du schéma|Définition|
 |:-:|:-:|:-:|
 |m_|nom de la thématique|contient des données métiers gérés par l'Agglomération ou utilisées pour les besoins d'un service|
