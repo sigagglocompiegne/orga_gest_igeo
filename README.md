@@ -29,9 +29,9 @@ Des particularités ont été intégrés concernant les privilèges sur certains
 
 L'ensemble des libellés (schéma, table, champ, vue, ...) doit être écrit en minuscule ce qui permet d'éviter l’utilisation des "" dans les requêtes sql).
 
-* **Les schémas** :
+### Les schémas
 
-  * *Généralité* :
+  * **Généralité** :
   
 Un schéma doit contenir uniquement de la donnée brute qui peut être modifiée soit manuellement ou avec l'aide de déclencheur (ou trigger) mis en place pour automatiser certaines tâches.
 Seules les vues pour la gestion ou de filtrage simplifié de la donnée peuvent être contenues dans les schémas de gestion. Les autres vues ayant des usages décisionnels, d'analyses ou d'OpenData sont stockées dans le schémas d'exploitation.
@@ -51,7 +51,7 @@ Seules les vues pour la gestion ou de filtrage simplifié de la donnée peuvent 
 ||||x_opendata|schéma contenant des tables ou vues pré-traitées et utilisées pour les exports OpenData|
 ||||x_projet|schéma contenant des tables ou vues pré-traitées pour répondre à une demande dans le cadre d'un projet|
 
-* **Les tables** :
+### Les tables
 
   * **Généralité** :
   
