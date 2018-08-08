@@ -66,8 +66,13 @@ Néanmoins, on peut considérer 2 cas :
  
 Particularité : les tables ou vues d'exploitations présentes dans les schémas x_apps, x_apps_public et x_opendata sont préfixés du nom du schéma sans les _ ce qui donne pour leur chemin d'accès :
 
-. `x_apps.xapps_[nom table]`, `x_apps_public.xappspublic_[nom table]` ou `x_opendata.xopendate_[nom table]`
+. `x_apps.xapps_[nom table]`, `x_apps_public.xappspublic_[nom table]` ou `x_opendata.xopendata_[nom table]`
  
- |Type d'objets|préfixe|suffixe|exemple|définition|
- |:-:|:-:|:-:|:-:|:-:|
- |table|geo_||geo_|| 
+Pour les autres schémas, le tableau ci-dessous donne les règles à appliquer :
+
+|Type d'objets|préfixe|suffixe|exemple|Particularité|
+|:-:|:-:|:-:|:-:|:-:|
+|table avec un attribut de géométrie|geo_||geo_p_zone_urba|| 
+|vue avec un attribut de géométrie|geo_v_||geo_v_docurba|| 
+|vue matérialisée avec un attribut de géométrie|geo_vmr_||xapps_geo_vmr_adresse|Ces vues sont généralement des vues d'exploitation donc stockées dans les schémas préfixés x_ et elle-même préfixées par le nom du schéma (cf ci-dessus)|
+|vue matérialisée avec un attribut de géométrie et transformée en table|geo_vm_||geo_vm_adresse|Ces vues ont été transformées en table pour des raisoins de performance uniquement et doivent être régénérées avec le même code SQL que la vue.|
