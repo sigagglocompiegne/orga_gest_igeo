@@ -75,7 +75,8 @@ Néanmoins, on peut considérer 2 cas :
 |traitement applicatif pro|**xapps_**|
 |export OpenData|**xopendata_**|
 
- 
+**Rappel :**
+
 Ces préfixes sont suivis de la dénomination classique des tables.
 
 Cette dénomination peut-être liée à un modèle de données issus d'une norme (cas pour les données des pos-plu) ou laissé à la liberté de l'administrateur en respectant une syntaxe de bases :
