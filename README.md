@@ -40,7 +40,7 @@ Seules les vues pour la gestion ou de filtrage simplifié de la donnée peuvent 
 4 types de préfixes de dénomination de schémas sont présents dans la base de données :
 
 |Préfixe|Nom du schéma|Type|Exemple|Définition|
-|:-:|:-:|:-:|:-:|
+|:-:|:-:|:-:|:-:|:-:|
 |m_|nom de la thématique|gestion|m_urbanisme_doc, m_habitat, ...|contient des données métiers gérés par l'Agglomération ou utilisées pour les besoins d'un service|
 |r_|nom du référentiel|gestion|r_bdtopo, r_pcrs, r_objet,...|contient des données issues de référentiel ou étant concédéré comme des référenties gérées par l'Agglomération ou provenant de producteurs tiers |
 |s_|nom de la base de données|gestion|s_sirene, s_rpls, ...|contient des données attributaires de référence provenant de producteurs tiers|
