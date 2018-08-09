@@ -88,9 +88,11 @@ Cette dénomination peut-être liée à un modèle de données issus d'une norme
 Les tables doivent être commentées afin d'assurer la compréhension de la donnée (au minimum définir en quelques mots le contenu de la table, la source, l'échelle d'emprise, éventuellement une date de validité, de mise à jour, ...).
 
 **Les attributs génériques d'une table** :
- 
- La dénomination des attributs reste libre mais doit-être explicite et faire l'objet d'un commentaire.
- 
+
+Afin d'éviter les problèmes d'export des données, notamment au format shape, il est recommandé de limiter à 10 caractères le nom des attributs.
+
+La dénomination des attributs reste libre mais doit-être explicite et faire l'objet d'un commentaire.
+
 Seuls certains champs doivent respectés une règle de nommage et doivent être présents dans l'ensemble des tables des données gérées par l'Agglomération lorsque cela est nécessaire :
 
 |attribut|type|définition|
@@ -100,8 +102,10 @@ Seuls certains champs doivent respectés une règle de nommage et doivent être 
 |op_sai|character varying(80)|Opérateur de la saisie de la donnée|
 |observ|character varying(254)|Commentaires divers|
 |src_geom|character varying(2)|Code du référentiel géographique utilisé pour la saisie (référence à la table de valeur lt_src_geom|
+|date_sai|timestamp without time zone|Horodatage correspondant à la date de saisie de la donnée sans intégration du décalage horaire par rapport au méridient d'origine, valeur non null et par défaut : now()|
+|date_maj|timestamp without time zone|Horodatage correspondant à la date de mise à jour de la donnée sans intégration du décalage horaire par rapport au méridient d'origine, à gérer par un trigger before pour update|
 
-(à compléter)
+
 
  * **Les vues** :
  
