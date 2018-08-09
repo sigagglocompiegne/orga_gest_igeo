@@ -104,7 +104,18 @@ Seuls certains champs doivent respectés une règle de nommage et doivent être 
 |src_geom|character varying(2)|Code du référentiel géographique utilisé pour la saisie (référence à la table de valeur lt_src_geom|
 |date_sai|timestamp without time zone|Horodatage correspondant à la date de saisie de la donnée sans intégration du décalage horaire par rapport au méridient d'origine, valeur non null et par défaut : now()|
 |date_maj|timestamp without time zone|Horodatage correspondant à la date de mise à jour de la donnée sans intégration du décalage horaire par rapport au méridient d'origine, à gérer par un trigger before pour update|
+|geom||attribut contenant la géométrie|
+|sup_m2|integer|Superficie en m²|
+|long_m|integer|longueur en mètre|
 
+Pour les données ponctuelles devant être communiquées à l'extérieur en intégrant des champs x/Y, les attributs suivants peuvent être ajoutés : 
+
+|attribut|type|définition|
+|:-:|:-:|:-:|
+|x_l93|numeric(9,2)| coordonnées X en lambert 93 arrondie au cm (ex : 696000.52)|
+|y_l93|numeric(10,2)| coordonnées y en lambert 93 arrondie au cm (ex : 6952300.89)|
+|x_wgs84|numeric(2,7)| longitude|
+|y_wgs84|numeric(1,9)| latitude|
 
 
  * **Les vues** :
