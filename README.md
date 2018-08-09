@@ -160,6 +160,6 @@ ATTENTION : Les vues peuvent être commentées, mais l'action de relancer le cod
 |clé primaire||[nom_table]|_pkey|`geo_p_zone_urba_pkey`||
 |clé étrangère||[nom_table]_[champ clé(si nécessaire)]|_fkey|`lt_destdomi_fkey`||
 |function trigger (générique)|r_|[nom]||`r_l_surf_cal_ha()`|ils sont placés dans le schéma `public`|
-|function trigger (spécifique à une table ou vue)|m_|[nom table]|_[type d'éxécution]|`ft_an_doc_urba_null()`|ils sont placés dans le schéma principal d'activation|
-|trigger|t_t(+n° d'ordre d'éxécution)_|[nom_fonction trigger]||`t_t1_r_l_surf_cal` ou `t_t1_ft_an_doc_urba_null`||
+|function trigger (spécifique à une table ou vue)|m_|[nom table]|_[type d'éxécution]|`m_an_doc_urba_null()`|ils sont placés dans le schéma principal d'activation|
+|trigger|t_t(+n° d'ordre d'éxécution)_|[nom_fonction trigger]||`t_t1_r_l_surf_cal` ou `t_t1_m_an_doc_urba_null`||
 
