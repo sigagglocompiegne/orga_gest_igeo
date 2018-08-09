@@ -71,8 +71,7 @@ Le tableau ci-dessous indique les principes de dénomination des tables.
 |données attributaires et géométriques||**geo_**|`geo_p_zone_urba`||
 |uniquement de la donnée attributaire ||**an_**|`an_doc_urba`||
 |uniquement de la donnée attributaire servant de liens ou de correspondance||**lk_**|`lk_voirie_rurbain`||
-|liste de valeur||**lt_**|`lt_typedoc`|Cette table doit contenir au minimum 2 attributs obligatoires : code (codification) et valeur (valeur du code).
-La valeur du code est une liste ordonnée avec 3 valeurs par défaut (00 : information non renseignée, 99 : valeur autre, ZZ : objet non concerné)|
+|liste de valeur||**lt_**|`lt_typedoc`|Cette table doit contenir au minimum 2 attributs obligatoires : code (codification) et valeur (valeur du code).La valeur du code est une liste ordonnée avec 3 valeurs par défaut (00 : information non renseignée, 99 : valeur autre, ZZ : objet non concerné)|
 |log ou information de suivi||**log_**|`log_suivi_audit`||
 |traitement applicatif grand public|**xappspublic_**|préfixe correspondant|`xappspublic_an_dec_pav_adr_proxi`||
 |traitement applicatif pro|**xapps_**|préfixe correspondant|`xapps_an_fisc_geo_taxe_amgt`||
