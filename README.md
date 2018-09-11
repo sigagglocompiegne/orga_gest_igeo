@@ -106,6 +106,7 @@ Seuls certains champs doivent respectés une règle de nommage et doivent être 
 |date_maj|timestamp without time zone|Horodatage correspondant à la date de mise à jour de la donnée sans intégration du décalage horaire par rapport au méridient d'origine, à gérer par un trigger before pour update|
 |geom||attribut contenant la géométrie|
 |sup_m2|integer|Superficie en m²|
+|sup_ha|real|Superficie en ha|
 |long_m|integer|longueur en mètre|
 
 Pour les données ponctuelles devant être communiquées à l'extérieur en intégrant des champs x/Y, les attributs suivants peuvent être ajoutés : 
