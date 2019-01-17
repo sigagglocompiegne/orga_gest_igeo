@@ -91,7 +91,7 @@ Le tableau ci-dessous indique les principes de dénomination des tables.
 |log ou information de suivi||**log_**|`log_suivi_audit`||
 |traitement applicatif grand public|**xappspublic_**|préfixe correspondant|`xappspublic_an_dec_pav_adr_proxi`||
 |traitement applicatif pro|**xapps_**|préfixe correspondant|`xapps_an_fisc_geo_taxe_amgt`||
-|export OpenData|**xopendata_**|préfixe correspondant|||
+|export OpenData|**xopendata_**|préfixe correspondant|`xopendata_an_v_bal`||
 
 **Rappel :**
 
