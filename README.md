@@ -57,6 +57,7 @@ Exemple :
 |fonction |`ft_geo_v_pei_ctr`|Fonction liée au trigger `t_t1_geo_v_pei_ctr`, gérant les particularités liées à la gestion des données en cas d'insertion, de mise à jour ou de suppression|
 |séquence |`geo_pei_id_seq`|Séquence dépendante à la table `geo_pei` pour l'attribut `id_pei`|
 
+
 **ATTENTION : pour les fonctions liées à un trigger, il est impératif de commenter le développement effectué à l'intérieur du code SQL afin de comprendre les différentes étapes ou particularités.**
 
 ### Les schémas
