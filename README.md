@@ -43,6 +43,8 @@ L'ensemble des objets (schéma, attribut, champ, vue, trigger, ...) contenu dans
 - un trigger / une fonction : description succinte de son fonctionnement
 - une vue : description succinte de son contenu et de son usage
 
+Les contraintes sur les attributs ainsi que les indexs n'ont pas d'obligation de commentaires.
+
 ### Les schémas
 
   * **Généralité** :
