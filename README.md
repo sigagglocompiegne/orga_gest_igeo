@@ -47,7 +47,7 @@ Les contraintes sur les attributs ainsi que les indexes n'ont pas d'obligation d
 
 Exemple :
 
-|Objet|Intitulé|Commentaire |
+|Objet|Intitulé|Exemple de commentaires |
 |:-:|:-:|:-:|
 |schéma|`m_defense_incendie`|Données géographiques métiers sur le théme des Points d'Eau Incendie permettant de définir la conformité par rapport à la défense contre les incendies|
 |table|`geo_pei`|Classe décrivant un point d'eau incendie|
