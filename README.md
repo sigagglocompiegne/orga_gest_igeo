@@ -21,7 +21,7 @@ Des particularités ont été intégrés concernant les privilèges sur certains
   
   * **Tableaux de répartition** :
 
-|Rôle de connexion|Superutilisateur|Propriétaire des objets|Appartient au groupe|Privilèges sur le structure|Privilèges sur les données|
+|Rôle de connexion|Superutilisateur|Propriétaire des objets|Appartient au groupe|Privilèges sur la structure|Privilèges sur les données|
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |postgres|x|(par défaut)|-|all|all|
 |sig_create||x|create_sig|all|all|
@@ -31,6 +31,16 @@ Des particularités ont été intégrés concernant les privilèges sur certains
 ## Règles de dénomination des objets de la base de données
 
 L'ensemble des libellés (schéma, table, champ, vue, ...) doit être écrit en minuscule ce qui permet d'éviter l’utilisation des "" dans les requêtes sql).
+
+## Commentaires sur les objets
+
+L'ensemble des objets (schéma, attribut, champ, vue, trigger, ...) contenu dans la base de données doit être commenté comme suit :
+- un schéma : description succinte du contenu et de l'usage générique des données
+- une table : description succinte du contenu, de l'usage et des particularités si besoin
+- un attribut : libellé complet et description succinte si besoin
+- une séquence : description de l'usage, de la table et de l'attribut cible
+- un trigger / une fonction : description succinte de son fonctionnement
+- une vue : description succinte de son contenu et de son usage
 
 ### Les schémas
 
