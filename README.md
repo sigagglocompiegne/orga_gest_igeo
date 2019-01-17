@@ -35,15 +35,29 @@ L'ensemble des libellés (schéma, table, champ, vue, ...) doit être écrit en 
 
 ## Commentaires sur les objets
 
-L'ensemble des objets (schéma, attribut, champ, vue, trigger, ...) contenu dans la base de données doit être commenté comme suit :
+L'ensemble des objets (schéma, table, attribut, vue, trigger, ...) contenu dans la base de données doit être commenté comme suit :
 - un schéma : description succinte du contenu et de l'usage générique des données
 - une table : description succinte du contenu, de l'usage et des particularités si besoin
 - un attribut : libellé complet et description succinte si besoin
 - une séquence : description de l'usage, de la table et de l'attribut cible
-- un trigger / une fonction : description succinte de son fonctionnement
+- un trigger / une fonction / une règle : description succinte de son fonctionnement
 - une vue : description succinte de son contenu et de son usage
 
 Les contraintes sur les attributs ainsi que les indexes n'ont pas d'obligation de commentaires.
+
+Exemple :
+
+|Objet|Intitulé|Commentaire |
+|:-:|:-:|:-:|
+|schéma|`m_defense_incendie`|Données géographiques métiers sur le théme des Points d'Eau Incendie permettant de définir la conformité par rapport à la défense contre les incendies|
+|table|`geo_pei`|Classe décrivant un point d'eau incendie|
+|attribut|`raccord`|Descriptif des raccords de sortie du PEI (nombre et diamètres exprimés en mm)|
+|vue|`geo_v_pei_ctr`|Vue éditable destinée à la modification des données relatives aux PEI et aux contrôles|
+|trigger|`t_t1_geo_v_pei_ctr`|Trigger de vue s'exécutant pour une instance d'insertion, de mise à jour ou de suppression |
+|fonction |`ft_geo_v_pei_ctr`|Fonction liée au trigger `t_t1_geo_v_pei_ctr`, gérant les particularités liées à la gestion des données en cas d'insertion, de mise à jour ou de suppression|
+|séquence |`geo_pei_id_seq`|Séquence dépendante à la table `geo_pei` pour l'attribut `id_pei`|
+
+**ATTENTION :** pour les fonctions liées à un trigger, il est impératif de commenter le développement effectué à l'intérieur du code SQL afin de comprendre les différentes étapes ou particularités.
 
 ### Les schémas
 
