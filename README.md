@@ -54,7 +54,8 @@ Exemple :
 |attribut|`raccord`|Descriptif des raccords de sortie du PEI (nombre et diamètres exprimés en mm)|
 |vue|`geo_v_pei_ctr`|Vue éditable destinée à la modification des données relatives aux PEI et aux contrôles|
 |trigger|`t_t1_geo_v_pei_ctr`|Trigger de vue s'exécutant pour une instance d'insertion, de mise à jour ou de suppression |
-|fonction |`ft_geo_v_pei_ctr`|Fonction liée au trigger `t_t1_geo_v_pei_ctr`, gérant les particularités liées à la gestion des données en cas d'insertion, de mise à jour ou de suppression|
+|fonction métier |`ft_m_geo_v_pei_ctr`|Fonction métier liée au trigger `t_t1_geo_v_pei_ctr`, gérant les particularités liées à la gestion des données en cas d'insertion, de mise à jour ou de suppression|
+|fonction référence |`ft_r_sup_m2_maj`|Fonction référence permettant de calculé la surface d'un objet en m²|
 |séquence |`geo_pei_id_seq`|Séquence dépendante à la table `geo_pei` pour l'attribut `id_pei`|
 
 
