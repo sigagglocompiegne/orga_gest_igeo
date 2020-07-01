@@ -195,3 +195,41 @@ ATTENTION : Les vues peuvent être commentées, mais l'action de relancer le cod
 |function trigger (spécifique à une table ou vue)|ft_m_|[nom table]|_[type d'éxécution]|`ft_m_an_doc_urba_null()`|ils sont placés dans le schéma principal d'activation|
 |trigger|t_t(+n° d'ordre d'éxécution)_|[nom fonction générique] ou [nom_table]_[attribut concerné ou action]||`t_t1_ft_r_l_surf_cal` ou `t_t1_an_doc_urba_null`||
 
+## Les règles d'identification des objets
+
+La mise en place d'une base de données structurée impose de disposer d'une politique commune de mise en oeuvre d'identifiants.
+Au niveau national, il n'existe pas pour le moment d'une norme définissant la composition d'un identifiant d'objets à l'inverse de l'identification d'un lot de données par exemple.
+Il existe néanmoins des pistes de réflexions permettant de dégager des tendances sur la création de ces identifiants.
+
+Nous nous sommes inspirés à l'Aggloméraiton de la Région de Compiègne de la réflexion menée par le groupe de travail du Service d'Administration nationale des données et référentiels sur l'Eau (SANDRE).
+
+Il est convenu que les identifiants de nos objets doivent être non signifiant à savoir qu'ils comportent une seule information distinguant ainsi l'objet dans son environnement proche. Cette démarche doit être obligatoire dans le cadre d'un modèle de données intégrant des objets multithématiques (ex : un modèle de données des réseaux intégrant n réseaux thématiques). Dans ces conditions, cet identifiant non signifiant doit être complété par des attributs permettant d'identifier ces thématiques. La composition de cet ensemble forme ainsi une clé d'intéropérabilité.
+
+Exemple pour les objets d'un réseau :
+
+|identifiant|reseau|classe|
+|:-:|:-:|:-:|
+|25698741|ASS|OUV|
+
+La clé est donc égale à 25698741_ASS_OUV
+
+
+Dans les cas d'une gestion plus classique de données ponctuelles ou non intégrées à un modèle complexe, l'identifiant non signifiant peut être utilisé, mais nous permettons également un identifiant signifiant. Celui-ci comporte une information décrivant l'objet auquel il se rapporte.
+
+Exemple pour un donnée thématique gérant les lieux de collecte des conteneurs Verre :
+
+Avec identifiant non signifiant
+
+|identifiant|
+|:-:|
+|25698525|
+
+Avec identifiant signifiant
+
+|identifiant|
+|:-:|
+|LCO25698525|
+
+La partie LCO indiquant Lieu de COllecte
+
+Ces deux exemples utilisent par défaut une séquence automatique d'incrémentation d'un numéro. La politique d'identifiants retenue est spécifiée dans chaque projet métier.
