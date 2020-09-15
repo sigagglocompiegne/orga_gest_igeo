@@ -1,4 +1,4 @@
-![picto](/doc/img/geocompiegnois_2020.png)
+![picto](/doc/img/geocompiegnois_2020_reduit_v2.png)
 
 # Principes organisationnels de la base de données igeo_compiegnois de l'Agglomération de la Région de Compiègne
 
