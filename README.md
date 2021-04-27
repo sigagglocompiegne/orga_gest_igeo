@@ -3,7 +3,7 @@
 # Principes organisationnels de la base de données igeo_compiegnois de l'Agglomération de la Région de Compiègne
 
 - Script générique (trigger, ...) contenu dans la base et mutualisé à l'ensemble des données
-  * [script générique](sql/igeo_public.sql)
+  * [script générique](sql/igeo_public.sql) (à faire)
 
 ## Les rôles de connexion et privilèges des groupes
   
