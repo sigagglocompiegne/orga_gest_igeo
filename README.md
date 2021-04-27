@@ -24,7 +24,7 @@ Des particularités ont été intégrés concernant les privilèges sur certains
 
 |Rôle de connexion|Superutilisateur|Utilisateur|Propriétaire des objets|Appartient au groupe|Privilèges sur la structure|Privilèges sur les données|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|postgres|x||(par défaut)|-|all|all|
+||x|postgres|(par défaut)|-|all|all|
 |create_sig|||x||||
 |||sig_create||create_sig|all|all|
 |||sig_edit||create_sig|aucun|select,insert,update,delete|
