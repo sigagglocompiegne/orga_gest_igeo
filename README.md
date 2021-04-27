@@ -23,7 +23,7 @@ Des particularités ont été intégrés concernant les privilèges sur certains
   * **Tableaux de répartition** :
 
 |Rôle de connexion|Superutilisateur|Utilisateur|Propriétaire des objets|Appartient au groupe|Privilèges sur la structure|Privilèges sur les données|
-|:-:|:-:|:-:|:-:|:-:|:-:|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |postgres|x||(par défaut)|-|all|all|
 |create_sig||||create_sig|all|all|
 |||sig_create|x|create_sig|all|all|
