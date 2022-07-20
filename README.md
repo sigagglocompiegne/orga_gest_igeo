@@ -171,8 +171,8 @@ Le tableau ci-dessous indique les principes de dénomination des vues qui décou
 |6|vue matérilaisée en table de données attributaires||**an_vm_**|utilisée uniquement avec les cas 7,8 et 9|
 |7|traitement applicatif grand public|**xappspublic_** |préfixe correspondant|`xappspublic_an_vmr_fichegeo_ruplu0_gdpublic`|
 |8|traitement applicatif pro|**xapps_** |préfixe correspondant|`xapps_an_v_troncon`|
-|9|Indicateur (pour tableau de bord) |**xapps_** |préfixe correspondant et suffixe _tab |`xapps_an_ev_chiffre_cle_tab`|
-|10|Statistique (pour graphique ou pour tableau) |**xapps_** |préfixe correspondant et préfixage `_stat_` avant le domaine |`xapps_an_v_ecl_stat_intervention`|
+|9|Indicateur (pour tableau de bord) |**xapps_** |préfixe correspondant et suffixe _tab (présente des chiffres clés ou des listes esploitées directement dans un tableau de bord) |`xapps_an_ev_chiffre_cle_tab`|
+|10|Statistique (pour graphique ou pour tableau) |**xapps_** |préfixe correspondant et préfixage `_stat_` avant le domaine  (même si cette vue peut-être utilisée dans un TAB (mais spécifique à un graphique ou un tableau de synthèse)|`xapps_an_v_ecl_stat_intervention`|
 |11|export OpenData|**xopendata_** |préfixe correspondant|`xopendata_an_v_bal`|
 
 **Rappel :**
