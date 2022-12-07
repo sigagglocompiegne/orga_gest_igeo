@@ -134,6 +134,7 @@ Seuls certains champs doivent respectés une règle de nommage et doivent être 
 |insee|character varying(5)|code insee de la commune|
 |commune|character varying(150)|libellé de la commune|
 |op_sai|character varying(80)|Opérateur de la saisie de la donnée|
+|op_maj|character varying(80)|Opérateur de la dernière mise à jour de la donnée|
 |observ|character varying(254)|Commentaires divers|
 |src_geom|character varying(2)|Code du référentiel géographique utilisé pour la saisie (référence à la table de valeur lt_src_geom|
 |date_sai|timestamp without time zone|Horodatage correspondant à la date de saisie de la donnée sans intégration du décalage horaire par rapport au méridient d'origine, valeur non null et par défaut : now()|
