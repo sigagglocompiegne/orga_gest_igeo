@@ -201,6 +201,20 @@ ATTENTION : Les vues peuvent être commentées, mais l'action de relancer le cod
 |function trigger (spécifique à une table ou vue)|ft_m_|[nom table]|_[type d'éxécution]|`ft_m_an_doc_urba_null()`|ils sont placés dans le schéma principal d'activation|
 |trigger|t_t(+n° d'ordre d'éxécution)_|[nom fonction générique] ou [nom_table]_[attribut concerné ou action]||`t_t1_ft_r_l_surf_cal` ou `t_t1_an_doc_urba_null`||
 
+## Des listes de valeurs partagées
+
+Un certain nombre de listye de valeurs sont communes à plusieurs thèmatiques métiers. **Ces listes ne doivent pas être dupliquées dans les différents schémas** sauf cas particulier d'adaptations fonctionnalles.
+
+Ci-dessous, la liste de valeurs partagées :
+
+|table|schéma|définition|
+|:---:|:---:|:---:|
+|lt_booleen|r_objet|gestion de valeurs de type faux booléen (pour la gestion d'un "Non renseigné" ou "Non concerné" en plus du opui/non)|
+|lt_contrat|r_objet|liste des contrats concernant les thématiques réseaux, ....|
+|lt_gestio_proprio|r_objet|liste des types simplifiés de gestionnaire ou de propriétaire des objets|
+|lt_position|r_objet|liste des différentes positions que peut prendre un objet|
+|lt_src_geom|r_objet|liste des référentiels géographiques utilisés pour la saisie des informtions|
+
 ## Les règles d'identification des objets
 
 La mise en place d'une base de données structurée impose de disposer d'une politique commune de mise en oeuvre d'identifiants.
