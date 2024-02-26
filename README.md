@@ -137,8 +137,8 @@ Seuls certains champs doivent respectés une règle de nommage et doivent être 
 |op_maj|character varying(80)|Opérateur de la dernière mise à jour de la donnée|
 |observ|character varying(254)|Commentaires divers|
 |src_geom|character varying(2)|Code du référentiel géographique utilisé pour la saisie (référence à la table de valeur lt_src_geom|
-|date_sai|timestamp without time zone|Horodatage correspondant à la date de saisie de la donnée sans intégration du décalage horaire par rapport au méridient d'origine, valeur non null et par défaut : now()|
-|date_maj|timestamp without time zone|Horodatage correspondant à la date de mise à jour de la donnée sans intégration du décalage horaire par rapport au méridient d'origine, à gérer par un trigger before pour update|
+|dbinsert|timestamp without time zone|Horodatage correspondant à la date de saisie de la donnée sans intégration du décalage horaire par rapport au méridient d'origine, valeur non null et par défaut : now()|
+|dbupdate|timestamp without time zone|Horodatage correspondant à la date de mise à jour de la donnée sans intégration du décalage horaire par rapport au méridient d'origine, à gérer par un trigger before pour update|
 |geom||attribut contenant la géométrie|
 |sup_m2|integer|Superficie en m²|
 |sup_ha|real|Superficie en ha|
