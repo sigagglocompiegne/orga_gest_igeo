@@ -213,6 +213,7 @@ Ci-dessous, la liste de valeurs partagées :
 |lt_contrat|r_objet|liste des contrats concernant les thématiques réseaux, ....|
 |lt_gestio_proprio|r_objet|liste des types simplifiés de gestionnaire ou de propriétaire des objets|
 |lt_position|r_objet|liste des différentes positions que peut prendre un objet|
+|lt_statut|r_objet|liste des status d'objets (en projet, arrêté, en service, ...)|
 |lt_src_geom|r_objet|liste des référentiels géographiques utilisés pour la saisie des informtions|
 
 ## Les règles d'identification des objets
