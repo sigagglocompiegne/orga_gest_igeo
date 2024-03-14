@@ -139,7 +139,7 @@ Seuls certains champs doivent respectés une règle de nommage et doivent être 
 |src_geom|character varying(2)|Code du référentiel géographique utilisé pour la saisie (référence à la table de valeur lt_src_geom|
 |dbinsert|timestamp without time zone|Horodatage correspondant à la date de saisie de la donnée sans intégration du décalage horaire par rapport au méridient d'origine, valeur non null et par défaut : now()|
 |dbupdate|timestamp without time zone|Horodatage correspondant à la date de mise à jour de la donnée sans intégration du décalage horaire par rapport au méridient d'origine, à gérer par un trigger before pour update|
-|d[]|date|Les autres types de date, correspondant à des dates de réalisation, date de visite, ...., sont de types `date` et sont préfixés avec la lettre `d` ou `d_` suivi du type de date|
+|d[ ]|date|Les autres types de date, correspondant à des dates de réalisation, date de visite, ...., sont de types `date` et sont préfixés avec la lettre `d` ou `d_` suivi du type de date|
 |geom||attribut contenant la géométrie|
 |sup_m2|integer|Superficie en m²|
 |sup_ha|real|Superficie en ha|
