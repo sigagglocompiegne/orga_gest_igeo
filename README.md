@@ -266,9 +266,9 @@ Ces deux exemples utilisent par défaut une séquence automatique d'incrémentat
 
 # Organisation du répertoire lié aux procédures partagées FMEForm et FMFlow
 
-* [Stockage de tous les traitements FMEForm sur le répertoire partagé `R:\Ressources\4-Partage\3-Procedures\FME`]()
-* [Publication des traitements FMEForm sur FMEFlow]()
-* [Nommage des fichiers FMEForm/FMEFlow]()
+* [Stockage de tous les traitements FMEForm sur le répertoire partagé `R:\Ressources\4-Partage\3-Procedures\FME`](#stockage-de-tous-les-traitements-fmeform-sur-le-répertoire-partagé-rressources4-partage3-proceduresfme)
+* [Publication des traitements FMEForm sur FMEFlow](#publication-des-traitements-fmeform-sur-fmeflow)
+* [Nommage des fichiers FMEForm/FMEFlow](#nommage-des-fichiers-fmeformfmeflow)
 
 
 Afin d'assurer une cohérence de stockage entre les traitements FME sur le serveur du service (R://) et sur le serveur FMEFlow, une mise en cohérence des noms des répertoires a été mis en place. Cette refonte des libellés de répertoire s'accompagne également d'une mise en cohérence des noms des fichiers FMEForm et FMEFlow.
