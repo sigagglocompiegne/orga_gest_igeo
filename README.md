@@ -272,11 +272,11 @@ Afin d'assurer une cohérence de stockage entre les traitements FME sur le serve
 
 ![rep](doc/img/rep_r.png)
 
-- `infra` :
-- `metiers` :
-- `open_data` :
-- `outils` :
-- `referentiel` :
+- `infra` : ensemble des workflows concernant la gestion des procédures automatisées liées aux processus internes des outils de l'infrastructure SIG (rafraichissement de vues matérialisées, traitement des logs, sauvegardes diverses, ...)
+- `metiers` : ensemble des workflows concernant la gestion des procédures automatisées liées à des traitements relevant d'une spécificité métier et réalisée pour le métier en question sans aucune autre intéraction
+- `open_data` : ensemble des workflows concernant la gestion des procédures automatisées liées à l'export ou l'import de données Open Data ou en relation avec une API en import ou en export
+- `outils` : ensemble des workflows concernant la gestion des procédures automatisées liées à des traitements offrant des services extérieurs (application grand public) ou mise à disposition de services de traitements personnalisés (boitage, extracteur, ...)
+- `referentiel` : ensemble des workflows concernant la gestion des procédures automatisées liées aux données contenues dans les référentiels
 
 Dans le répertoire `metiers`, des sous-répertoires sont créés par métier.
 
