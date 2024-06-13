@@ -105,8 +105,9 @@ Le tableau ci-dessous indique les principes de dénomination des tables.
 |uniquement de la donnée attributaire servant de liens ou de correspondance||**lk_**|`lk_voirie_rurbain`||
 |liste de valeur||**lt_**|`lt_typedoc`|Cette table doit contenir au minimum 2 attributs obligatoires : code (codification) et valeur (valeur du code).La valeur du code est une liste ordonnée avec 3 valeurs par défaut (00 : information non renseignée, 99 : valeur autre, ZZ : objet non concerné)|
 |log ou information de suivi||**[classe]_log**|`an_ecl_log`||
-|traitement applicatif pro|**xapps_**|préfixe correspondant|`xapps_an_fisc_geo_taxe_amgt`||
-|export OpenData répondant ou non à un standard (indiquer dans le commentaire de la vue) et exploité dans FMEFlow, ajout d'un suffixe|**xopendata_** [nom de la vue] **_fmeflow**|préfixe correspondant|`xopendata_geo_vm_elececl_cable_autocad_fmeflow`||
+|traitement applicatif pro|**xapps_**|préfixe correspondant |`xapps_an_fisc_geo_taxe_amgt`||+ suffixe
+|export OpenData répondant ou non à un standard (indiquer dans le commentaire de la vue)|**xopendata_**|préfixe correspondant|`xopendata_geo_vm_elececl_cable_autocad`||
+|indication de l'utilisation dans FMEflow|**_fmeflow**|suffixe correspondant |`xopendata_geo_vm_elececl_cable_autocad_fmflow`||
 
 **Rappel :**
 
