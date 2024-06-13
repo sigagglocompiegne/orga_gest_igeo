@@ -272,7 +272,14 @@ Afin d'assurer une cohérence de stockage entre les traitements FME sur le serve
 
 ![rep](doc/img/rep_r.png)
 
-* Publication des traitements FMEForm sur FMEFlow `R:\Ressources\4-Partage\3-Procedures\FME`
+Dans le répertoire `metiers`, des sous-répertoires sont créés par métier.
+
+![rep](doc/img/rep_r_metier.png)
+
+* Publication des traitements FMEForm sur FMEFlow
 
 
 ![rep](doc/img/rep_fmeflow.png)
+
+
+
