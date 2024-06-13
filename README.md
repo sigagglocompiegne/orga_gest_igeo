@@ -269,3 +269,6 @@ Ces deux exemples utilisent par défaut une séquence automatique d'incrémentat
 Afin d'assurer une cohérence de stockage entre les traitements FME sur le serveur du service (R://) et sur le serveur FMEFlow, une mise en cohérence des noms des répertoires a été mis en place. Cette refonte des libellés de répertoire s'accompagne également d'une mise en cohérence des noms des fichiers FMEForm et FMEFlow.
 
 * Stockage de tous les traitements FMEForm sur le répertoire partagé `R:\Ressources\4-Partage\3-Procedures\FME`
+
+
+![rep](doc_img/rep_r.png)
