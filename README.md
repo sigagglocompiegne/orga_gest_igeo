@@ -126,21 +126,21 @@ Seuls certains champs doivent respectés une règle de nommage et doivent être 
 
 |attribut|type|définition|
 |:-:|:-:|:-:|
+|d[ ]|date|Les autres types de date, correspondant à des dates de réalisation, date de visite, ...., sont de types `date` et sont préfixés avec la lettre `d` ou `d_` suivi de la signification de la date (ex : d_visite, pour date de visite, ou d_create pour date de réalisation du document|
+|observ|character varying(254)|Commentaires divers|
 |insee|character varying(5)|code insee de la commune|
 |commune|character varying(150)|libellé de la commune|
 |op_sai|character varying(80)|Opérateur de la saisie de la donnée|
 |op_maj|character varying(80)|Opérateur de la dernière mise à jour de la donnée|
-|observ|character varying(254)|Commentaires divers|
-|src_geom|character varying(2)|Code du référentiel géographique utilisé pour la saisie (référence à la table de valeur lt_src_geom|
 |dbinsert|timestamp without time zone|Horodatage correspondant à la date de saisie de la donnée sans intégration du décalage horaire par rapport au méridient d'origine, valeur non null et par défaut : now()|
 |dbupdate|timestamp without time zone|Horodatage correspondant à la date de mise à jour de la donnée sans intégration du décalage horaire par rapport au méridient d'origine, à gérer par un trigger before pour update|
-|d[ ]|date|Les autres types de date, correspondant à des dates de réalisation, date de visite, ...., sont de types `date` et sont préfixés avec la lettre `d` ou `d_` suivi de la signification de la date (ex : d_visite, pour date de visite, ou d_create pour date de réalisation du document|
-|geom||attribut contenant la géométrie|
+|dbstatut|varchar(2)|Statu de l'objet (attribut obligatoire en cas de gestion d'une corbeille)|
+|dbetat|varchar(2)|Etat d'avancement de l'objet en terme d'aménagement (attribut optionnel selon les thématiques)|
+|src_geom|character varying(2)|Code du référentiel géographique utilisé pour la saisie (référence à la table de valeur lt_src_geom|
 |sup_m2|integer|Superficie en m²|
 |sup_ha|real|Superficie en ha|
 |long_m|integer|longueur en mètre|
-|dbstatut|varchar(2)|Statu de l'objet (attribut obligatoire en cas de gestion d'une corbeille)|
-|dbetat|varchar(2)|Etat d'avancement de l'objet en terme d'aménagement (attribut optionnel selon les thématiques)|
+|geom||attribut contenant la géométrie|
 
 Pour les données ponctuelles devant être communiquées à l'extérieur en intégrant des coordonnées x et y, les attributs suivants peuvent être ajoutés : 
 
