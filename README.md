@@ -2,8 +2,8 @@
 
 # Principes organisationnels du Service Information Géographique de l'Agglomération de la Région de Compiègne
 
-* [Organisation de la base de données `igeo_compiegnois`](#1--la-base-de-données-igeo_compiegnois)
-* Organisation du répertoire lié aux précudres partagées FMEForm et FMFlow
+* [Organisation de la base de données `igeo_compiegnois`](#la-base-de-données-igeo_compiegnois)
+* [Organisation du répertoire lié aux procédures partagées FMEForm et FMFlow]()
 
 # La base de données `igeo_compiegnois`
 
@@ -259,6 +259,9 @@ Avec identifiant signifiant
 |:-:|
 |LCO25698525|
 
-La partie LCO indiquant Lieu de COllecte
+La partie LCO indiquant Lieu de Collecte
 
 Ces deux exemples utilisent par défaut une séquence automatique d'incrémentation d'un numéro. La politique d'identifiants retenue est spécifiée dans chaque projet métier.
+
+
+# Organisation du répertoire lié aux procédures partagées FMEForm et FMFlow
