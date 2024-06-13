@@ -107,7 +107,7 @@ Le tableau ci-dessous indique les principes de dénomination des tables.
 |log ou information de suivi||**[classe]_log**|`an_ecl_log`||
 |traitement applicatif pro|**xapps_**|préfixe correspondant |`xapps_an_fisc_geo_taxe_amgt`||+ suffixe
 |export OpenData répondant ou non à un standard (indiquer dans le commentaire de la vue)|**xopendata_**|préfixe correspondant|`xopendata_geo_vm_elececl_cable_autocad`||
-|indication de l'utilisation dans FMEflow|**_fmeflow**|suffixe correspondant |`xopendata_geo_vm_elececl_cable_autocad_fmflow`||
+|indication de l'utilisation dans FMEflow|**_fmeflow**|suffixe correspondant |`xopendata_geo_vm_elececl_cable_autocad_fmeflow`||
 
 **Rappel :**
 
