@@ -1,6 +1,8 @@
 ![picto](/doc/img/geocompiegnois_2020_reduit_v2.png)
 
-# Principes organisationnels de la base de données igeo_compiegnois de l'Agglomération de la Région de Compiègne
+# Principes organisationnels du Service Information Géographique de l'Agglomération de la Région de Compiègne
+
+# La base de données `igeo_compiegnois`
 
 - Script générique (trigger, ...) contenu dans la base et mutualisé à l'ensemble des données
   * [script générique](sql/igeo_public.sql) (à faire)
