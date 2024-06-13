@@ -266,9 +266,14 @@ Ces deux exemples utilisent par défaut une séquence automatique d'incrémentat
 
 # Organisation du répertoire lié aux procédures partagées FMEForm et FMFlow
 
+* [Stockage de tous les traitements FMEForm sur le répertoire partagé `R:\Ressources\4-Partage\3-Procedures\FME`]()
+* [Publication des traitements FMEForm sur FMEFlow]()
+* [Nommage des fichiers FMEForm/FMEFlow]()
+
+
 Afin d'assurer une cohérence de stockage entre les traitements FME sur le serveur du service (R://) et sur le serveur FMEFlow, une mise en cohérence des noms des répertoires a été mis en place. Cette refonte des libellés de répertoire s'accompagne également d'une mise en cohérence des noms des fichiers FMEForm et FMEFlow.
 
-* Stockage de tous les traitements FMEForm sur le répertoire partagé `R:\Ressources\4-Partage\3-Procedures\FME`
+## Stockage de tous les traitements FMEForm sur le répertoire partagé `R:\Ressources\4-Partage\3-Procedures\FME`
 
 ![rep](doc/img/rep_r.png)
 
@@ -282,11 +287,11 @@ Dans le répertoire `metiers`, des sous-répertoires sont créés par métier.
 
 ![rep](doc/img/rep_r_metier.png)
 
-* Publication des traitements FMEForm sur FMEFlow
+## Publication des traitements FMEForm sur FMEFlow
 
 
 ![rep](doc/img/rep_fmeflow.png)
 
 Sur FMEFlow, les sous-répertoires métiers n'existent pas. La disctinction des traitements métiers s'effectue par le préfixe du fichier.
 
-* Nommage des fichiers FMEForm/FMEFlow
+## Nommage des fichiers FMEForm/FMEFlow
