@@ -322,3 +322,6 @@ Ce nom doit correspondre aux principes de nommination des fichiers. On pourra y 
 |OUTILS|Extracteur univsersel|OUTIL : Extracteur universel|
 |VOIRIE-PMR|Alerte fin de validité carte invalidité|VOIRIE-PMR : Alerte fin de validité carte invalidité|
 
+Des tags corresponds aux répertoires ont été créés. Ceux-ci doivent être affectés à chaque automatisme mis en place. Un flitre permet de séctionner un tag et d'afficher que les traitements correspondant.
+
+![rep](doc/img/tag_fmeflow.png)
