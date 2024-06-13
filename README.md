@@ -195,7 +195,7 @@ ATTENTION : Les vues peuvent être commentées, mais l'action de relancer le cod
 |index||[nom_table]_[champ indexé]|_idx|`geo_p_zone_urba_geom_idx`||
 |séquence||[nom_table]_[champ séquence]|_seq|`geo_a_zone_urba_gid_seq`||
 |clé primaire||[nom_table]|_pkey|`geo_p_zone_urba_pkey`||
-|clé étrangère||[nom_table]_[champ clé(si nécessaire)]|_fkey|`lt_destdomi_fkey`||
+|clé étrangère||[nom_table]_[champ clé(si nécessaire)]. Si plusieurs clés étrangères existent, le nom de l'attribut concerné peut-être ajouté au nom de la clé|_fkey|`lt_destdomi_fkey` ou `lt_mob_iti_dbstatut_fkey`||
 |function trigger (générique)|ft_r_|[nom]||`ft_r_l_surf_cal_ha()`|ils sont placés dans le schéma `public`|
 |function trigger (spécifique à une table ou vue)|ft_m_|[nom table]|_[type d'éxécution]|`ft_m_an_doc_urba_null()`|ils sont placés dans le schéma principal d'activation|
 |trigger|t_t(+n° d'ordre d'éxécution)_|[nom fonction générique] ou [nom_table]_[attribut concerné ou action]||`t_t1_ft_r_l_surf_cal` ou `t_t1_an_doc_urba_null`||
