@@ -298,10 +298,12 @@ Sur FMEFlow, les sous-répertoires métiers n'existent pas. La disctinction des 
 
 Le tableau ci-dessous indique les préconisations de libellé des fichiers FMEForm et ceux utilisés dans FMEFlow.
 
-|Répertoire|prefixe|corps|suffixe|
-|:---|:---|:---|:---|
-|infra|infra_|||
-|metier|[sous-métier]_ (ici on nommera le fichier par un préfixe correspondant au métier en question)|||
-|open_data|opandata_|||
-|outils|[nom de l'outils]_|||
-|referentiel|[nom du référentiel]_|||
+|Répertoire|prefixe|corps|suffixe|exemple|
+|:---|:---|:---|:---|:---|
+|infra|infra_|explicite|_fmeflow (si celui-ci est exploité dans FMEFlow)|infra_ENVOI_EMAIL_USUER_GEO.fmw|
+|metier|[sous-métier]_ (ici on nommera le fichier par un préfixe correspondant au métier en question)||||
+|open_data|opandata_||||
+|outils|[nom de l'outils]_||||
+|referentiel|[nom du référentiel]_||||
+
+Attention : si plusieurs traitements sont appelés dans une `automation` ou dans un traitement (appelant d'autres traitements) de taches planifiés, il faut que ceux-ci soient aussi publiés dans FMEFlow.
