@@ -296,14 +296,16 @@ Sur FMEFlow, les sous-répertoires métiers n'existent pas. La disctinction des 
 
 ## Nommage des fichiers FMEForm/FMEFlow
 
-Le tableau ci-dessous indique les préconisations de libellé des fichiers FMEForm et ceux utilisés dans FMEFlow.
+Le tableau ci-dessous indique les préconisations de libellés des fichiers FMEForm et ceux utilisés dans FMEFlow.
 
 |Répertoire|prefixe|corps|suffixe|exemple|
 |:---|:---|:---|:---|:---|
-|infra|infra_|explicite|_fmeflow (si celui-ci est exploité dans FMEFlow)|infra_ENVOI_EMAIL_USUER_GEO.fmw|
-|metier|[sous-métier]_ (ici on nommera le fichier par un préfixe correspondant au métier en question)||||
-|open_data|opandata_||||
-|outils|[nom de l'outils]_||||
-|referentiel|[nom du référentiel]_||||
+|infra|infra_|explicite|_fmeflow (si celui-ci est exploité dans FMEFlow)|`infra_envoi_email_userGEO.fmw`|
+|metier|[sous-métier]_ (ici on nommera le fichier par un préfixe correspondant au métier en question)|explicite (un n° d'ordre peut-être introduit après le préfixe pour indiquer la présence de blocs appelés|_fmeflow (si celui-ci est exploité dans FMEFlow)|`URB_00_PLU_integration_final_executoire.fmw`/`HAB_rpls_geocodage_integration.fmw`/`VOIRIE_pmr_verif_validite_carte_fmeserver.fmw`|
+|open_data|opandata_||_fmeflow (si celui-ci est exploité dans FMEFlow)||
+|outils|[nom de l'outils]_||_fmeflow (si celui-ci est exploité dans FMEFlow)||
+|referentiel|[nom du référentiel]_||_fmeflow (si celui-ci est exploité dans FMEFlow)||
 
 Attention : si plusieurs traitements sont appelés dans une `automation` ou dans un traitement (appelant d'autres traitements) de taches planifiés, il faut que ceux-ci soient aussi publiés dans FMEFlow.
+
+Des sous-répertoires peuvent être intégrés afin de stocker des résultats de traitements si besoin.
