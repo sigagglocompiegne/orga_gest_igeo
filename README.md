@@ -301,10 +301,10 @@ Le tableau ci-dessous indique les préconisations de libellés des fichiers FMEF
 |Répertoire|prefixe|corps|suffixe|exemple|
 |:---|:---|:---|:---|:---|
 |infra|infra_|explicite|_fmeflow (si celui-ci est exploité dans FMEFlow)|`infra_envoi_email_userGEO.fmw`|
-|metier|[sous-métier]_ (ici on nommera le fichier par un préfixe correspondant au métier en question)|explicite (un n° d'ordre peut-être introduit après le préfixe pour indiquer la présence de blocs appelés|_fmeflow (si celui-ci est exploité dans FMEFlow)|`URB_00_PLU_integration_final_executoire.fmw`,`HAB_rpls_geocodage_integration.fmw`,`VOIRIE_pmr_verif_validite_carte_fmeserver.fmw`|
-|open_data|opandata_||_fmeflow (si celui-ci est exploité dans FMEFlow)||
-|outils|[nom de l'outils]_||_fmeflow (si celui-ci est exploité dans FMEFlow)||
-|referentiel|[nom du référentiel]_||_fmeflow (si celui-ci est exploité dans FMEFlow)||
+|metier|[sous-métier]_ (ici on nommera le fichier par un préfixe correspondant au métier en question)|explicite (un n° d'ordre peut-être introduit après le préfixe pour indiquer la présence de blocs appelés|_fmeflow (si celui-ci est exploité dans FMEFlow)|`urb_00_plu_integration_final_executoire.fmw``hab_rpls_geocodage_integration.fmw``voirie_pmr_verif_validite_carte_fmeflow.fmw`|
+|open_data|opandata_|explicite|_fmeflow (si celui-ci est exploité dans FMEFlow)|`opendata_api_versionnement_bal_lot_fmeflow.fmw`|
+|outils|[nom de l'outils]_|explicite|_fmeflow (si celui-ci est exploité dans FMEFlow)|`outils_extracteur_universel_fmeflow.fmw`|
+|referentiel|[nom du référentiel]_|explicite|_fmeflow (si celui-ci est exploité dans FMEFlow)|adresse_ctrl_qualite.fmw|
 
 Attention : si plusieurs traitements sont appelés dans une `automation` ou dans un traitement (appelant d'autres traitements) de taches planifiés, il faut que ceux-ci soient aussi publiés dans FMEFlow.
 
