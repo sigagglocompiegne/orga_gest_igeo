@@ -295,3 +295,13 @@ Dans le répertoire `metiers`, des sous-répertoires sont créés par métier.
 Sur FMEFlow, les sous-répertoires métiers n'existent pas. La disctinction des traitements métiers s'effectue par le préfixe du fichier.
 
 ## Nommage des fichiers FMEForm/FMEFlow
+
+Le tableau ci-dessous indique les préconisations de libellé des fichiers FMEForm et ceux utilisés dans FMEFlow.
+
+|Répertoire|prefixe|corps|suffixe|
+|:---|:---|:---|:---|
+|infra||||
+|metier||||
+|open_data||||
+|outils||||
+|referentiel||||
