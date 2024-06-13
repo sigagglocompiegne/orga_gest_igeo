@@ -202,7 +202,7 @@ ATTENTION : Les vues peuvent être commentées, mais l'action de relancer le cod
 
 ## Des listes de valeurs partagées
 
-Un certain nombre de listye de valeurs sont communes à plusieurs thèmatiques métiers. **Ces listes ne doivent pas être dupliquées dans les différents schémas** sauf cas particulier d'adaptations fonctionnalles.
+Un certain nombre de liste de valeurs sont communes à plusieurs thèmatiques métiers. **Ces listes ne doivent pas être dupliquées dans les différents schémas** sauf cas particulier d'adaptations fonctionnelles. Elles sont stockées dans le schéma `r_objet`.
 
 Ci-dessous, la liste de valeurs partagées :
 
@@ -212,8 +212,11 @@ Ci-dessous, la liste de valeurs partagées :
 |lt_contrat|r_objet|liste des contrats concernant les thématiques réseaux, ....|
 |lt_gestio_proprio|r_objet|liste des types simplifiés de gestionnaire ou de propriétaire des objets|
 |lt_position|r_objet|liste des différentes positions que peut prendre un objet|
-|lt_statut|r_objet|liste des status d'objets (en projet, arrêté, en service, ...)|
-|lt_situation|r_objet|liste des situations d'objets (actif, inactif, supprimé)|
+|lt_objet_codegeo|r_objet|Liste de valeurs des précisions du géocodage|
+|lt_objet_etatoccup|r_objet|Liste de valeurs des états d'occupation du terrain issu du standard des sites d'activités du CNIG 2023|
+|lt_objet_maifon|r_objet|Liste de valeurs de la maitrise foncière du terrain issu du standard des sites d'activités du CNIG 2023|
+|lt_statut|r_objet|liste des statuts d'objets (actif, inactif, supprimé)|
+|lt_etat_avancement|r_objet|Code permettant de décrire l'état d'avancement de l'objet en terme d'aménagement|
 |lt_src_geom|r_objet|liste des référentiels géographiques utilisés pour la saisie des informtions|
 
 ## Les règles d'identification des objets
