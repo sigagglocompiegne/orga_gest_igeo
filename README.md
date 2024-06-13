@@ -281,5 +281,5 @@ Dans le répertoire `metiers`, des sous-répertoires sont créés par métier.
 
 ![rep](doc/img/rep_fmeflow.png)
 
-
+Sur FMEFlow, les sous-répertoires métiers n'existent pas. La disctinction des traitements métiers s'effectue par le préfixe du fichier.
 
