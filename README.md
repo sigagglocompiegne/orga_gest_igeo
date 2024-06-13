@@ -270,6 +270,7 @@ Ces deux exemples utilisent par défaut une séquence automatique d'incrémentat
 * [Publication des traitements FMEForm sur FMEFlow](#publication-des-traitements-fmeform-sur-fmeflow)
 * [Nommage des fichiers FMEForm/FMEFlow](#nommage-des-fichiers-fmeformfmeflow)
 * [Nommage des automations ou schedules dans FMEFlow](#Nommage-des-automations-ou-schedules-dans-FMEFlow)
+* [Nommage des applications workspace, automation et gallery dans FMEFlow](#Nommage-des-applications-workspace,-automation-et-gallery-dans-FMEFlow)
 
 
 Afin d'assurer une cohérence de stockage entre les traitements FME sur le serveur du service (R://) et sur le serveur FMEFlow, une mise en cohérence des noms des répertoires a été mis en place. Cette refonte des libellés de répertoire s'accompagne également d'une mise en cohérence des noms des fichiers FMEForm et FMEFlow.
@@ -322,6 +323,8 @@ Ce nom doit correspondre aux principes de nommination des fichiers. On pourra y 
 |OUTILS|Extracteur univsersel|OUTIL : Extracteur universel|
 |VOIRIE-PMR|Alerte fin de validité carte invalidité|VOIRIE-PMR : Alerte fin de validité carte invalidité|
 
-Des tags corresponds aux répertoires ont été créés. Ceux-ci doivent être affectés à chaque automatisme mis en place. Un flitre permet de séctionner un tag et d'afficher que les traitements correspondant.
+Des tags correspondant aux répertoires ont été créés. Ceux-ci doivent être affectés à chaque automatisme mis en place. Un filtre permet de sélectionner les traitements en question.
 
 ![rep](doc/img/tag_fmeflow.png)
+
+## Nommage des applications workspace, automation et gallery dans FMEFlow
