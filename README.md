@@ -79,7 +79,7 @@ Seules les vues pour la gestion ou de filtrage simplifié de la donnée peuvent 
 |m_|nom de la thématique|gestion|m_urbanisme_doc, m_habitat, ...|contient des données métiers gérés par l'Agglomération ou utilisées pour les besoins d'un service|
 |r_|nom du référentiel|gestion|r_bdtopo, r_pcrs, r_objet,...|contient des données issues de référentiel ou étant concédéré comme des référenties gérées par l'Agglomération ou provenant de producteurs tiers |
 |s_|nom de la base de données|gestion|s_sirene, s_rpls, ...|contient des données attributaires de référence provenant de producteurs tiers|
-|x_|nom de l'usage|exploitation||contient des données pré-traitées pour les applications WebSIG métiers, Grands Publics, pour des exports OpenData ou des traitements particuliers liés à des projets|
+|x_|nom de l'usage|exploitation||contient des données pré-traitées pour les applications Grands Publics ou des traitements particuliers liés à des projets|
 ||||x_apps_public|schéma contenant des tables ou vues pré-traitées et utilisées dans les applicatifs Grands Publics|
 ||||x_projet|schéma contenant des tables ou vues pré-traitées pour répondre à une demande dans le cadre d'un projet|
 
@@ -105,9 +105,6 @@ Le tableau ci-dessous indique les principes de dénomination des tables.
 |uniquement de la donnée attributaire servant de liens ou de correspondance||**lk_**|`lk_voirie_rurbain`||
 |liste de valeur||**lt_**|`lt_typedoc`|Cette table doit contenir au minimum 2 attributs obligatoires : code (codification) et valeur (valeur du code).La valeur du code est une liste ordonnée avec 3 valeurs par défaut (00 : information non renseignée, 99 : valeur autre, ZZ : objet non concerné)|
 |log ou information de suivi||**[classe]_log**|`an_ecl_log`||
-|traitement applicatif pro|**xapps_**|préfixe correspondant |`xapps_an_fisc_geo_taxe_amgt`||+ suffixe
-|export OpenData répondant ou non à un standard (indiquer dans le commentaire de la vue)|**xopendata_**|préfixe correspondant|`xopendata_geo_vm_elececl_cable_autocad`||
-|indication de l'utilisation dans FMEflow|**_fmeflow**|suffixe correspondant |`xopendata_geo_vm_elececl_cable_autocad_fmeflow`||
 
 **Rappel :**
 
@@ -142,8 +139,10 @@ Seuls certains champs doivent respectés une règle de nommage et doivent être 
 |sup_m2|integer|Superficie en m²|
 |sup_ha|real|Superficie en ha|
 |long_m|integer|longueur en mètre|
+|dbstatut|varchar(2)||
+|dbetat|varchar(2)||
 
-Pour les données ponctuelles devant être communiquées à l'extérieur en intégrant des champs x/Y, les attributs suivants peuvent être ajoutés : 
+Pour les données ponctuelles devant être communiquées à l'extérieur en intégrant des coordonnées x et y, les attributs suivants peuvent être ajoutés : 
 
 |attribut|type|définition|
 |:-:|:-:|:-:|
@@ -165,15 +164,16 @@ Le tableau ci-dessous indique les principes de dénomination des vues qui décou
 |:-:|:-:|:-:|:-:|:-:|
 |1|données attributaires et géométriques||**geo_v_**|`geo_v_docurba`|
 |2|uniquement de la donnée attributaire ||**an_v_**|`an_v_docurba_arcba`|
-|3|vue matérilaisée de données attributaires et géométriques||**geo_vmr_**|utilisée uniquement avec les cas 7,8 et 9|
-|4|vue matérilaisée en table de données attributaires et géométriques||**geo_vm_**|utilisée uniquement avec les cas 7,8 et 9|
-|5|vue matérilaisée de données attributaires||**an_vmr_**|utilisée uniquement avec les cas 7,8 et 9 |
-|6|vue matérilaisée en table de données attributaires||**an_vm_**|utilisée uniquement avec les cas 7,8 et 9|
+|3|vue matérilaisée de données attributaires et géométriques||**geo_vmr_**|utilisée prioritairement avec les cas 7,8 et 9|
+|4|vue matérilaisée en table de données attributaires et géométriques||**geo_vm_**|utilisée prioritairement avec les cas 7,8 et 9|
+|5|vue matérilaisée de données attributaires||**an_vmr_**|utilisée prioritairement avec les cas 7,8 et 9 |
+|6|vue matérilaisée en table de données attributaires||**an_vm_**|utilisée prioritairement avec les cas 7,8 et 9|
 |7|traitement applicatif grand public|**xappspublic_** |préfixe correspondant|`xappspublic_an_vmr_fichegeo_ruplu0_gdpublic`|
-|8|traitement applicatif pro|**xapps_** |préfixe correspondant|`xapps_an_v_troncon`|
+|8|traitement applicatif pro|**xapps_**|préfixe correspondant |`xapps_an_fisc_geo_taxe_amgt`|
 |9|Indicateur (pour tableau de bord) |**xapps_** |préfixe correspondant et suffixe _tab (présente des chiffres clés ou des listes esploitées directement dans un tableau de bord) |`xapps_an_ev_chiffre_cle_tab`|
 |10|Statistique (pour graphique ou pour tableau) |**xapps_** |préfixe correspondant et préfixage `_stat_` avant le domaine  (même si cette vue peut-être utilisée dans un TAB (mais spécifique à un graphique ou un tableau de synthèse)|`xapps_an_v_ecl_stat_intervention`|
-|11|export OpenData|**xopendata_** |préfixe correspondant|`xopendata_an_v_bal`|
+|11|export OpenData répondant ou non à un standard (indiquer dans le commentaire de la vue)|**xopendata_**|préfixe correspondant|`xopendata_geo_vm_elececl_cable_autocad`|
+|12|indication de l'utilisation dans FMEflow|**_fmeflow**|suffixe correspondant |`xopendata_geo_vm_elececl_cable_autocad_fmeflow`|
 
 **Rappel :**
 
