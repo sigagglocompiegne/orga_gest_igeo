@@ -139,8 +139,8 @@ Seuls certains champs doivent respectés une règle de nommage et doivent être 
 |sup_m2|integer|Superficie en m²|
 |sup_ha|real|Superficie en ha|
 |long_m|integer|longueur en mètre|
-|dbstatut|varchar(2)||
-|dbetat|varchar(2)||
+|dbstatut|varchar(2)|Statu de l'objet (attribut obligatoire en cas de gestion d'une corbeille)|
+|dbetat|varchar(2)|Etat d'avancement de l'objet en terme d'aménagement (attribut optionnel selon les thématiques)|
 
 Pour les données ponctuelles devant être communiquées à l'extérieur en intégrant des coordonnées x et y, les attributs suivants peuvent être ajoutés : 
 
