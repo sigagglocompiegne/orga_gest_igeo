@@ -328,3 +328,15 @@ Des tags correspondant aux répertoires ont été créés. Ceux-ci doivent être
 ![rep](doc/img/tag_fmeflow.png)
 
 ## Nommage des applications workspace, automation et gallery dans FMEFlow
+
+Même principe que précédemment, chaque application est nommée. Elle contient la source du traitement à utiliser et son répertoire de stockage dans FMEFlow.
+
+Ici le nom doit identifier le type d'application et ce qu'elle propose ou identifie.
+
+|Type d'application|Préfixe à utiliser|corps|exemple|
+|---|---|---|---|
+|Worspace|APP-Worspace|Expliciter le rôle de l'application|APP-Worspace-Extracteur-Universel|
+|Automation|APP-Automation|Expliciter le rôle de l'application|APP-Automation-Contrôle-Plan-Topo|
+|Gallery|APP-Gallery|Expliciter le contenu de la Gallerie|APP-Gallery-Outils-GeoCompiegnois|
+
+Le nom technique de l'application ne peut pas contenir d'espaces.
