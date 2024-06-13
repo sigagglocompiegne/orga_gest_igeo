@@ -300,8 +300,8 @@ Le tableau ci-dessous indique les préconisations de libellé des fichiers FMEFo
 
 |Répertoire|prefixe|corps|suffixe|
 |:---|:---|:---|:---|
-|infra||||
-|metier||||
-|open_data||||
-|outils||||
-|referentiel||||
+|infra|infra_|||
+|metier|[sous-métier]_ (ici on nommera le fichier par un préfixe correspondant au métier en question)|||
+|open_data|opandata_|||
+|outils|[nom de l'outils]_|||
+|referentiel|[nom du référentiel]_|||
