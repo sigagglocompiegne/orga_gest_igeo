@@ -269,6 +269,7 @@ Ces deux exemples utilisent par défaut une séquence automatique d'incrémentat
 * [Stockage de tous les traitements FMEForm sur le répertoire partagé `R:\Ressources\4-Partage\3-Procedures\FME`](#stockage-de-tous-les-traitements-fmeform-sur-le-répertoire-partagé-rressources4-partage3-proceduresfme)
 * [Publication des traitements FMEForm sur FMEFlow](#publication-des-traitements-fmeform-sur-fmeflow)
 * [Nommage des fichiers FMEForm/FMEFlow](#nommage-des-fichiers-fmeformfmeflow)
+* [Nommage des automations ou schedules dans FMEFlow](#Nommage-des-automations-ou-schedules-dans-FMEFlow)
 
 
 Afin d'assurer une cohérence de stockage entre les traitements FME sur le serveur du service (R://) et sur le serveur FMEFlow, une mise en cohérence des noms des répertoires a été mis en place. Cette refonte des libellés de répertoire s'accompagne également d'une mise en cohérence des noms des fichiers FMEForm et FMEFlow.
@@ -292,7 +293,7 @@ Dans le répertoire `metiers`, des sous-répertoires sont créés par métier.
 
 ![rep](doc/img/rep_fmeflow.png)
 
-Sur FMEFlow, les sous-répertoires métiers n'existent pas. La disctinction des traitements métiers s'effectue par le préfixe du fichier.
+Sur FMEFlow, les sous-répertoires métiers n'existent pas. La disctinction des traitements métiers s'effectue par le préfixe du fichier. Les traitements réalisés dans `R:\` doivent être publiés dans le même répertoire sur FMEFlow.
 
 ## Nommage des fichiers FMEForm/FMEFlow
 
@@ -309,3 +310,15 @@ Le tableau ci-dessous indique les préconisations de libellés des fichiers FMEF
 Attention : si plusieurs traitements sont appelés dans une `automation` ou dans un traitement (appelant d'autres traitements) de taches planifiés, il faut que ceux-ci soient aussi publiés dans FMEFlow.
 
 Des sous-répertoires peuvent être intégrés afin de stocker des résultats de traitements si besoin.
+
+## Nommage des automations ou schedules dans FMEFlow
+
+Dans FMEFlow, le paramétrage des automatismes impliquent de lui donner également un nom. Ces automatismes configurés intègrent le fichier `.fmw` correspondant et publié dans FMEFlow via FMEForm.
+Ce nom doit correspondre aux principes de nommination des fichiers. On pourra y introduire des différences de casses pour améliorers leur visualisations et tris.
+
+|Répertoire ou thème métier|Explicité l'objet du traitement|exemple|
+|---|---|---|---|---|
+|ADRESSE|API-BAL|ADRESSE : API-BAL|
+|OUTILS|Extracteur univsersel|OUTIL : Extracteur universel|
+|VOIRIE-PMR|Alerte fin de validité carte invalidité|VOIRIE-PMR : Alerte fin de validité carte invalidité|
+
