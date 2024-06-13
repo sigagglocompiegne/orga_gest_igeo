@@ -317,7 +317,7 @@ Dans FMEFlow, le paramétrage des automatismes impliquent de lui donner égaleme
 Ce nom doit correspondre aux principes de nommination des fichiers. On pourra y introduire des différences de casses pour améliorers leur visualisations et tris.
 
 |Répertoire ou thème métier|Explicité l'objet du traitement|exemple|
-|---|---|---|---|---|
+|---|---|---|
 |ADRESSE|API-BAL|ADRESSE : API-BAL|
 |OUTILS|Extracteur univsersel|OUTIL : Extracteur universel|
 |VOIRIE-PMR|Alerte fin de validité carte invalidité|VOIRIE-PMR : Alerte fin de validité carte invalidité|
