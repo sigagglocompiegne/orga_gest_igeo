@@ -2,10 +2,10 @@
 
 # Principes organisationnels du Service Information Géographique de l'Agglomération de la Région de Compiègne
 
-* [Organisation de la base de données `igeo_compiegnois`](#la base de données)
+* [1 - Organisation de la base de données `igeo_compiegnois`](#1)
 * Organisation du répertoire lié aux précudres partagées FMEForm et FMFlow
 
-# La base de données `igeo_compiegnois`
+# 1- La base de données `igeo_compiegnois`
 
 - Script générique (trigger, ...) contenu dans la base et mutualisé à l'ensemble des données
   * [script générique](sql/igeo_public.sql) (à faire)
