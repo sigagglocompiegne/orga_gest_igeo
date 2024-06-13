@@ -271,4 +271,4 @@ Afin d'assurer une cohérence de stockage entre les traitements FME sur le serve
 * Stockage de tous les traitements FMEForm sur le répertoire partagé `R:\Ressources\4-Partage\3-Procedures\FME`
 
 
-![rep](doc_img/rep_r.png)
+![rep](doc/img/rep_r.png)
