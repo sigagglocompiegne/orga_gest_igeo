@@ -272,6 +272,8 @@ Afin d'assurer une cohérence de stockage entre les traitements FME sur le serve
 
 ![rep](doc/img/rep_r.png)
 
+ * dddd
+
 Dans le répertoire `metiers`, des sous-répertoires sont créés par métier.
 
 ![rep](doc/img/rep_r_metier.png)
