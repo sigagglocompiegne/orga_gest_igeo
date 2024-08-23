@@ -302,9 +302,9 @@ Le tableau ci-dessous indique les préconisations de libellés des fichiers FMEF
 
 |Répertoire|prefixe|corps|suffixe|exemple|
 |---|---|---|---|---|
-|infra|infra_|explicite|_fmeflow (si celui-ci est exploité dans FMEFlow)|`infra_envoi_email_userGEO.fmw`|
+|infra|infra_|explicite|_fmeflow (si celui-ci est exploité dans FMEFlow)|`infra_geo_envoi_email_user_fmeflow.fmw`|
 |metier|[sous-métier]_ (ici on nommera le fichier par un préfixe correspondant au métier en question)|explicite (un n° d'ordre peut-être introduit après le préfixe pour indiquer la présence de blocs appelés|_fmeflow (si celui-ci est exploité dans FMEFlow)|`urb_00_plu_integration_final_executoire.fmw``hab_rpls_geocodage_integration.fmw``voirie_pmr_verif_validite_carte_fmeflow.fmw`|
-|open_data|opandata_|explicite|_fmeflow (si celui-ci est exploité dans FMEFlow)|`opendata_api_versionnement_bal_lot_fmeflow.fmw`|
+|open_data|opandata_|explicite|_fmeflow (si celui-ci est exploité dans FMEFlow)|`opendata_bal_versionnement_fmeflow.fmw`|
 |outils|[nom de l'outils]_|explicite|_fmeflow (si celui-ci est exploité dans FMEFlow)|`outils_extracteur_universel_fmeflow.fmw`|
 |referentiel|[nom du référentiel]_|explicite|_fmeflow (si celui-ci est exploité dans FMEFlow)|adresse_ctrl_qualite.fmw|
 
@@ -319,9 +319,9 @@ Ce nom doit correspondre aux principes de nommination des fichiers. On pourra y 
 
 |Répertoire ou thème métier|Explicité l'objet du traitement|exemple|
 |---|---|---|
-|ADRESSE|API-BAL|ADRESSE : API-BAL|
-|OUTILS|Extracteur univsersel|OUTIL : Extracteur universel|
-|VOIRIE-PMR|Alerte fin de validité carte invalidité|VOIRIE-PMR : Alerte fin de validité carte invalidité|
+|opendata|Export base de voie|opendata - Voie|
+|outils|Extracteur univsersel|outils - Extracteur universel|
+|voirie - pmr|Alerte fin de validité carte invalidité|voirie - pmr - Alerte fin de validité carte invalidité|
 
 Des tags correspondant aux répertoires ont été créés. Ceux-ci doivent être affectés à chaque automatisme mis en place. Un filtre permet de sélectionner les traitements en question.
 
