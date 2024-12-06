@@ -140,7 +140,7 @@ Seuls certains champs doivent respectés une règle de nommage et doivent être 
 |dbinsert|timestamp without time zone|Horodatage correspondant à la date de saisie de la donnée sans intégration du décalage horaire par rapport au méridient d'origine, valeur non null et par défaut : now()|
 |dbupdate|timestamp without time zone|Horodatage correspondant à la date de mise à jour de la donnée sans intégration du décalage horaire par rapport au méridient d'origine, à gérer par un trigger before pour update|
 |dbstatut|varchar(2)|Statut de l'objet (attribut obligatoire en cas de gestion d'une corbeille)|
-|dbetat|varchar(2)|Etat d'avancement de l'objet en terme d'aménagement (attribut optionnel selon les thématiques)|
+|etat|varchar(2)|Etat d'avancement de l'objet en terme d'aménagement (attribut optionnel selon les thématiques)|
 |src_geom|character varying(2)|Code du référentiel géographique utilisé pour la saisie (référence à la table de valeur lt_src_geom|
 |sup_m2|integer|Superficie en m²|
 |sup_ha|real|Superficie en ha|
