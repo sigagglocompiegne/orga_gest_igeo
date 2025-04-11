@@ -73,7 +73,7 @@ Exemple :
   * **Généralité** :
   
 Un schéma doit contenir uniquement de la donnée brute qui peut être modifiée soit manuellement ou avec l'aide de déclencheur (ou trigger) mis en place pour automatiser certaines tâches.
-Seules les vues pour la gestion ou de filtrage simplifié de la donnée peuvent être contenues dans les schémas de gestion. Les autres vues ayant des usages décisionnels, d'analyses ou d'OpenData sont stockées dans le schémas d'exploitation.
+Seules les vues pour la gestion ou de filtrage simplifié de la donnée peuvent être contenues dans les schémas de gestion. Les autres vues ayant des usages décisionnels, d'analyses ou d'OpenData sont stockées dans le schémas d'exploitation. Cette dernière recommandation est en cours de modification. Les vues applicatives et d'OpenData directement liées à la source métier seront stcokées dans le schéma métier et non plus dans les schémas dédiés.
 
    * **Tableaux de nomage** :
 
