@@ -75,6 +75,18 @@ Exemple :
 Un schéma doit contenir uniquement de la donnée brute qui peut être modifiée soit manuellement ou avec l'aide de déclencheur (ou trigger) mis en place pour automatiser certaines tâches.
 Seules les vues pour la gestion ou de filtrage simplifié de la donnée peuvent être contenues dans les schémas de gestion. Les autres vues ayant des usages décisionnels, d'analyses ou d'OpenData sont stockées dans le schémas d'exploitation. Cette dernière recommandation est en cours de modification. Les vues applicatives et d'OpenData directement liées à la source métier seront stcokées dans le schéma métier et non plus dans les schémas dédiés.
 
+Tableau listant les schémas internes de gestions ou applicatifs (hors métiers).
+
+|Nom du schéma|Description|
+|:-:|:-:|
+|public|Schéma public standard à Postgres. Ce schéma ne contient aucune classe d'objets. Il contient uniquement des fonctions génériques. Ces fonctions sont à recréer en cas de migration vers une nouvelle version de Postgres (cf partie restauration|
+|x_admin|Schéma contenant les classes d'objets servant à l'adminsitration générale de la base de données (modèle, liste des vues, tables, dépendances, ....)|
+|x_apps|Schéma contenant les classes d'objets applicatives multi-thématique. Les classes d'objets applicatives métiers sont stockés dans les schémas métiers|
+|x_apps_public|Schéma contenant les classes d'objets servant à une diffusion dans des applications Grand Public (ce schéma est voué à disparaître |
+|x_opendata|Schéma contenant les données formatées à des standards OpenData (ce schéma est voué à disparaître au profit d'une ventilation des formats OpenData dans les schémas métiers)|
+|x_outils|Schéma contenant les classes d'objets utilisés dans les automatismes mis en oeuvre pour les utilisateurs (extracteur, boitage, ...)|
+|x_projet|Schéma temporaire stockant des données provisoires ou de tests utilisés dans des applications ou des traitements nécessitant leurs intégrations dans la base de données|
+
    * **Tableaux de nomage** :
 
 4 types de préfixes de dénomination de schémas sont présents dans la base de données :
