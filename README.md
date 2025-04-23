@@ -81,9 +81,6 @@ Tableau listant les schémas internes de gestions ou applicatifs (hors métiers)
 |:-:|:-:|
 |public|Schéma public standard à Postgres. Ce schéma ne contient aucune classe d'objets. Il contient uniquement des fonctions génériques. Ces fonctions sont à recréer en cas de migration vers une nouvelle version de Postgres (cf partie restauration|
 |x_admin|Schéma contenant les classes d'objets servant à l'administration générale de la base de données (modèle, liste des vues, tables, dépendances, user et attribut personnalisé de l'applicatif Web,....)|
-|x_apps|Schéma contenant les classes d'objets applicatives multi-thématique. Les classes d'objets applicatives métiers sont stockés dans les schémas métiers|
-|x_apps_public|Schéma contenant les classes d'objets servant à une diffusion dans des applications Grand Public (ce schéma est voué à disparaître |
-|x_opendata|Schéma contenant les données formatées à des standards OpenData (ce schéma est voué à disparaître au profit d'une ventilation des formats OpenData dans les schémas métiers)|
 |x_outils|Schéma contenant les classes d'objets utilisés dans les automatismes mis en oeuvre pour les utilisateurs (extracteur, boitage, ...)|
 |x_projet|Schéma temporaire stockant des données provisoires ou de tests utilisés dans des applications ou des traitements nécessitant leurs intégrations dans la base de données|
 
